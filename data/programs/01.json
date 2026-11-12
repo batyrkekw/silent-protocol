@@ -1,0 +1,23 @@
+[
+  [
+    {
+      "type": "forward"
+    },
+    {
+      "type": "interact",
+      "object": "button1"
+    },
+    {
+      "type": "repeat",
+      "count": 3
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "end"
+    }
+  ],
+  [],
+  []
+]

@@ -1,0 +1,1709 @@
+[
+  [
+    {
+      "type": "forward"
+    },
+    {
+      "type": "left"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "condition": "camera_safe",
+      "device": "CAM1",
+      "ticks": 30,
+      "type": "condition"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "right"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "right"
+    },
+    {
+      "type": "right"
+    },
+    {
+      "count": 2,
+      "type": "repeat"
+    },
+    {
+      "condition": "noise_ready",
+      "type": "condition"
+    },
+    {
+      "condition": "guard_horizontal",
+      "type": "condition"
+    },
+    {
+      "type": "right"
+    },
+    {
+      "type": "right"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "right"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "signal": "G_EAST",
+      "type": "wait_signal",
+      "value": true
+    },
+    {
+      "condition": "camera_safe",
+      "device": "CAM1",
+      "ticks": 140,
+      "type": "condition"
+    },
+    {
+      "target": [
+        14,
+        13
+      ],
+      "type": "noise"
+    },
+    {
+      "signal": "G_EAST_GO",
+      "type": "send",
+      "value": true
+    },
+    {
+      "signal": "G_EAST",
+      "type": "send",
+      "value": false
+    },
+    {
+      "type": "right"
+    },
+    {
+      "type": "right"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "left"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "right"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "left"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "right"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "signal": "G_READY",
+      "type": "wait_signal",
+      "value": true
+    },
+    {
+      "signal": "G_READY",
+      "type": "send",
+      "value": false
+    },
+    {
+      "condition": "terminal_ready",
+      "device": "T_S",
+      "type": "condition"
+    },
+    {
+      "object": "T_S",
+      "type": "interact"
+    },
+    {
+      "signal": "G_WINDOW",
+      "type": "send",
+      "value": true
+    },
+    {
+      "type": "right"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "right"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "left"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "condition": "noise_ready",
+      "type": "condition"
+    },
+    {
+      "condition": "guard_horizontal",
+      "type": "condition"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "right"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "signal": "G_WEST",
+      "type": "wait_signal",
+      "value": true
+    },
+    {
+      "after_ticks": 60,
+      "condition": "laser_safe",
+      "device": "LZ_M",
+      "ticks": 50,
+      "type": "condition"
+    },
+    {
+      "after_ticks": 240,
+      "condition": "camera_safe",
+      "device": "CAM1",
+      "ticks": 130,
+      "type": "condition"
+    },
+    {
+      "target": [
+        14,
+        13
+      ],
+      "type": "noise"
+    },
+    {
+      "signal": "G_WEST_GO",
+      "type": "send",
+      "value": true
+    },
+    {
+      "signal": "G_WEST",
+      "type": "send",
+      "value": false
+    },
+    {
+      "type": "right"
+    },
+    {
+      "type": "right"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "left"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "signal": "G_WINDOW",
+      "type": "send",
+      "value": false
+    },
+    {
+      "type": "end"
+    },
+    {
+      "condition": "noise_ready",
+      "type": "condition"
+    },
+    {
+      "condition": "guard_horizontal",
+      "type": "condition"
+    },
+    {
+      "type": "right"
+    },
+    {
+      "type": "right"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "right"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "signal": "V_EAST",
+      "type": "wait_signal",
+      "value": true
+    },
+    {
+      "condition": "camera_safe",
+      "device": "CAM1",
+      "ticks": 140,
+      "type": "condition"
+    },
+    {
+      "target": [
+        14,
+        13
+      ],
+      "type": "noise"
+    },
+    {
+      "signal": "V_EAST_GO",
+      "type": "send",
+      "value": true
+    },
+    {
+      "signal": "V_EAST",
+      "type": "send",
+      "value": false
+    },
+    {
+      "type": "right"
+    },
+    {
+      "type": "right"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "left"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "left"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "condition": "camera_safe",
+      "device": "CAM1",
+      "ticks": 30,
+      "type": "condition"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "signal": "PLATE",
+      "type": "wait_signal",
+      "value": true
+    },
+    {
+      "signal": "VAULT_READY",
+      "type": "wait_signal",
+      "value": true
+    },
+    {
+      "condition": "terminal_ready",
+      "device": "T_V",
+      "type": "condition"
+    },
+    {
+      "object": "T_V",
+      "type": "interact"
+    },
+    {
+      "signal": "VAULT_WINDOW",
+      "type": "send",
+      "value": true
+    },
+    {
+      "type": "right"
+    },
+    {
+      "type": "right"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "condition": "camera_safe",
+      "device": "CAM1",
+      "ticks": 30,
+      "type": "condition"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "right"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "condition": "noise_ready",
+      "type": "condition"
+    },
+    {
+      "condition": "guard_horizontal",
+      "type": "condition"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "right"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "signal": "V_WEST",
+      "type": "wait_signal",
+      "value": true
+    },
+    {
+      "after_ticks": 60,
+      "condition": "laser_safe",
+      "device": "LZ_M",
+      "ticks": 50,
+      "type": "condition"
+    },
+    {
+      "after_ticks": 240,
+      "condition": "camera_safe",
+      "device": "CAM1",
+      "ticks": 130,
+      "type": "condition"
+    },
+    {
+      "target": [
+        14,
+        13
+      ],
+      "type": "noise"
+    },
+    {
+      "signal": "V_WEST_GO",
+      "type": "send",
+      "value": true
+    },
+    {
+      "signal": "V_WEST",
+      "type": "send",
+      "value": false
+    },
+    {
+      "type": "right"
+    },
+    {
+      "type": "right"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "left"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "left"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "condition": "camera_safe",
+      "device": "CAM1",
+      "ticks": 30,
+      "type": "condition"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "right"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    }
+  ],
+  [
+    {
+      "type": "forward"
+    },
+    {
+      "type": "left"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "condition": "camera_safe",
+      "device": "CAM1",
+      "ticks": 75,
+      "type": "condition"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "right"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "right"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "right"
+    },
+    {
+      "type": "right"
+    },
+    {
+      "count": 2,
+      "type": "repeat"
+    },
+    {
+      "signal": "G_WINDOW",
+      "type": "wait_signal",
+      "value": true
+    },
+    {
+      "object": "B_G",
+      "type": "interact"
+    },
+    {
+      "seconds": 5.8,
+      "timer": "DOOR",
+      "type": "timer"
+    },
+    {
+      "condition": "timer_done",
+      "timer": "DOOR",
+      "type": "condition"
+    },
+    {
+      "object": "B_G",
+      "type": "interact"
+    },
+    {
+      "signal": "G_WINDOW",
+      "type": "wait_signal",
+      "value": false
+    },
+    {
+      "type": "end"
+    },
+    {
+      "signal": "VAULT_ASSEMBLED",
+      "type": "wait_signal",
+      "value": true
+    },
+    {
+      "signal": "V_EAST",
+      "type": "send",
+      "value": true
+    },
+    {
+      "signal": "V_EAST_GO",
+      "type": "wait_signal",
+      "value": true
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "right"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "left"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "right"
+    },
+    {
+      "type": "right"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "left"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "right"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "signal": "PLATE",
+      "type": "send",
+      "value": true
+    },
+    {
+      "signal": "VAULT_OUT",
+      "type": "wait_signal",
+      "value": true
+    },
+    {
+      "type": "right"
+    },
+    {
+      "type": "right"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "left"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "right"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "right"
+    },
+    {
+      "type": "right"
+    },
+    {
+      "signal": "HOLDER_ASSEMBLED",
+      "type": "send",
+      "value": true
+    },
+    {
+      "signal": "V_WEST_GO",
+      "type": "wait_signal",
+      "value": true
+    },
+    {
+      "ticks": 10,
+      "type": "wait"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "right"
+    },
+    {
+      "ticks": 10,
+      "type": "wait"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "ticks": 10,
+      "type": "wait"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "ticks": 10,
+      "type": "wait"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "ticks": 10,
+      "type": "wait"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "ticks": 10,
+      "type": "wait"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "ticks": 10,
+      "type": "wait"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "ticks": 10,
+      "type": "wait"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "ticks": 10,
+      "type": "wait"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "ticks": 10,
+      "type": "wait"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "ticks": 10,
+      "type": "wait"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "ticks": 10,
+      "type": "wait"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "ticks": 10,
+      "type": "wait"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "ticks": 10,
+      "type": "wait"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "ticks": 10,
+      "type": "wait"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "ticks": 10,
+      "type": "wait"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "ticks": 10,
+      "type": "wait"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "left"
+    },
+    {
+      "ticks": 10,
+      "type": "wait"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "ticks": 10,
+      "type": "wait"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "ticks": 10,
+      "type": "wait"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "right"
+    },
+    {
+      "ticks": 10,
+      "type": "wait"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "ticks": 10,
+      "type": "wait"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "ticks": 10,
+      "type": "wait"
+    },
+    {
+      "type": "forward"
+    }
+  ],
+  [
+    {
+      "type": "forward"
+    },
+    {
+      "type": "left"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "condition": "camera_safe",
+      "device": "CAM1",
+      "ticks": 75,
+      "type": "condition"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "right"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "right"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "right"
+    },
+    {
+      "type": "right"
+    },
+    {
+      "count": 2,
+      "type": "repeat"
+    },
+    {
+      "signal": "G_EAST",
+      "type": "send",
+      "value": true
+    },
+    {
+      "signal": "G_EAST_GO",
+      "type": "wait_signal",
+      "value": true
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "right"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "left"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "select"
+    },
+    {
+      "signal": "G_READY",
+      "type": "send",
+      "value": true
+    },
+    {
+      "signal": "G_WINDOW",
+      "type": "wait_signal",
+      "value": true
+    },
+    {
+      "condition": "door_open",
+      "device": "D_G",
+      "type": "condition"
+    },
+    {
+      "condition": "laser_safe",
+      "device": "gallery",
+      "ticks": 210,
+      "type": "condition"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "condition": "selected_near",
+      "negate": true,
+      "type": "while"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "end"
+    },
+    {
+      "object": "selected",
+      "type": "interact"
+    },
+    {
+      "condition": "at_marker",
+      "device": "far",
+      "type": "if"
+    },
+    {
+      "count": 4,
+      "type": "repeat"
+    },
+    {
+      "type": "backward"
+    },
+    {
+      "type": "end"
+    },
+    {
+      "type": "end"
+    },
+    {
+      "type": "backward"
+    },
+    {
+      "type": "backward"
+    },
+    {
+      "type": "right"
+    },
+    {
+      "type": "right"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "signal": "G_WEST",
+      "type": "send",
+      "value": true
+    },
+    {
+      "signal": "G_WEST_GO",
+      "type": "wait_signal",
+      "value": true
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "right"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "left"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "right"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "object": "exit1",
+      "type": "interact"
+    },
+    {
+      "signal": "G_EAST_GO",
+      "type": "send",
+      "value": false
+    },
+    {
+      "signal": "G_WEST_GO",
+      "type": "send",
+      "value": false
+    },
+    {
+      "signal": "G_WINDOW",
+      "type": "wait_signal",
+      "value": false
+    },
+    {
+      "type": "right"
+    },
+    {
+      "type": "right"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "left"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "condition": "camera_safe",
+      "device": "CAM1",
+      "ticks": 75,
+      "type": "condition"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "right"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "right"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "right"
+    },
+    {
+      "type": "right"
+    },
+    {
+      "type": "end"
+    },
+    {
+      "signal": "VAULT_ASSEMBLED",
+      "type": "send",
+      "value": true
+    },
+    {
+      "signal": "V_EAST_GO",
+      "type": "wait_signal",
+      "value": true
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "right"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "right"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "signal": "VAULT_READY",
+      "type": "send",
+      "value": true
+    },
+    {
+      "signal": "VAULT_WINDOW",
+      "type": "wait_signal",
+      "value": true
+    },
+    {
+      "condition": "door_open",
+      "device": "D_V",
+      "type": "condition"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "object": "A",
+      "type": "interact"
+    },
+    {
+      "type": "right"
+    },
+    {
+      "type": "right"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "signal": "VAULT_OUT",
+      "type": "send",
+      "value": true
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "left"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "right"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "signal": "CARRIER_ASSEMBLED",
+      "type": "send",
+      "value": true
+    },
+    {
+      "signal": "HOLDER_ASSEMBLED",
+      "type": "wait_signal",
+      "value": true
+    },
+    {
+      "type": "right"
+    },
+    {
+      "type": "right"
+    },
+    {
+      "signal": "V_WEST",
+      "type": "send",
+      "value": true
+    },
+    {
+      "signal": "V_WEST_GO",
+      "type": "wait_signal",
+      "value": true
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "right"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "left"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "right"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "object": "exit1",
+      "type": "interact"
+    }
+  ]
+]

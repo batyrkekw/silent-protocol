@@ -1,0 +1,1976 @@
+[
+  {
+    "delay_before_hack": 125,
+    "events": [
+      {
+        "kind": "start",
+        "message": "Операция началась",
+        "robot": -1,
+        "tick": 0
+      },
+      {
+        "kind": "step",
+        "message": "ЛУВР · блок 1 · Ожидание времени",
+        "robot": 0,
+        "tick": 1
+      },
+      {
+        "kind": "step",
+        "message": "МОНА · блок 1 · Ожидание сигнала",
+        "robot": 1,
+        "tick": 1
+      },
+      {
+        "kind": "step",
+        "message": "ЛУВР · блок 2 · Взаимодействие",
+        "robot": 0,
+        "tick": 81
+      },
+      {
+        "kind": "door",
+        "message": "Кнопка открыла дверь",
+        "robot": 0,
+        "tick": 81
+      },
+      {
+        "kind": "step",
+        "message": "ЛУВР · блок 3 · Передача сигнала",
+        "robot": 0,
+        "tick": 82
+      },
+      {
+        "kind": "signal",
+        "message": "ЛУВР → OPEN = да",
+        "robot": 0,
+        "tick": 82
+      },
+      {
+        "kind": "step",
+        "message": "ЛУВР · блок 4 · Поворот налево",
+        "robot": 0,
+        "tick": 83
+      },
+      {
+        "kind": "step",
+        "message": "МОНА · блок 2 · Поворот налево",
+        "robot": 1,
+        "tick": 84
+      },
+      {
+        "kind": "step",
+        "message": "ЛУВР · блок 5 · Шаг вперёд",
+        "robot": 0,
+        "tick": 88
+      },
+      {
+        "kind": "step",
+        "message": "МОНА · блок 3 · Шаг вперёд",
+        "robot": 1,
+        "tick": 89
+      },
+      {
+        "kind": "step",
+        "message": "ЛУВР · блок 6 · Поворот налево",
+        "robot": 0,
+        "tick": 98
+      },
+      {
+        "kind": "step",
+        "message": "МОНА · блок 4 · Ожидание сигнала",
+        "robot": 1,
+        "tick": 99
+      },
+      {
+        "kind": "step",
+        "message": "ЛУВР · блок 7 · Шаг вперёд",
+        "robot": 0,
+        "tick": 103
+      },
+      {
+        "kind": "step",
+        "message": "ЛУВР · блок 8 · Шаг вперёд",
+        "robot": 0,
+        "tick": 113
+      },
+      {
+        "kind": "step",
+        "message": "ЛУВР · блок 9 · Шаг вперёд",
+        "robot": 0,
+        "tick": 123
+      },
+      {
+        "kind": "step",
+        "message": "ЛУВР · блок 10 · Шаг вперёд",
+        "robot": 0,
+        "tick": 133
+      },
+      {
+        "kind": "step",
+        "message": "ЛУВР · блок 11 · Поворот направо",
+        "robot": 0,
+        "tick": 143
+      },
+      {
+        "kind": "step",
+        "message": "ЛУВР · блок 12 · Шаг вперёд",
+        "robot": 0,
+        "tick": 148
+      },
+      {
+        "kind": "step",
+        "message": "ЛУВР · блок 13 · Шаг вперёд",
+        "robot": 0,
+        "tick": 158
+      },
+      {
+        "kind": "step",
+        "message": "ЛУВР · блок 14 · Шаг вперёд",
+        "robot": 0,
+        "tick": 168
+      },
+      {
+        "kind": "step",
+        "message": "ЛУВР · блок 15 · Шаг вперёд",
+        "robot": 0,
+        "tick": 178
+      },
+      {
+        "kind": "step",
+        "message": "ЛУВР · блок 16 · Шаг вперёд",
+        "robot": 0,
+        "tick": 188
+      },
+      {
+        "kind": "step",
+        "message": "ЛУВР · блок 17 · Поворот налево",
+        "robot": 0,
+        "tick": 198
+      },
+      {
+        "kind": "step",
+        "message": "ЛУВР · блок 18 · Шаг вперёд",
+        "robot": 0,
+        "tick": 203
+      },
+      {
+        "kind": "step",
+        "message": "ЛУВР · блок 19 · Поворот направо",
+        "robot": 0,
+        "tick": 213
+      },
+      {
+        "kind": "step",
+        "message": "ЛУВР · блок 20 · Шаг вперёд",
+        "robot": 0,
+        "tick": 218
+      },
+      {
+        "kind": "step",
+        "message": "ЛУВР · блок 21 · Шаг вперёд",
+        "robot": 0,
+        "tick": 228
+      },
+      {
+        "kind": "step",
+        "message": "ЛУВР · блок 22 · Шаг вперёд",
+        "robot": 0,
+        "tick": 238
+      },
+      {
+        "kind": "step",
+        "message": "ЛУВР · блок 23 · Шаг вперёд",
+        "robot": 0,
+        "tick": 248
+      },
+      {
+        "kind": "step",
+        "message": "ЛУВР · блок 24 · Ожидание времени",
+        "robot": 0,
+        "tick": 258
+      },
+      {
+        "kind": "step",
+        "message": "ЛУВР · блок 25 · Взаимодействие",
+        "robot": 0,
+        "tick": 383
+      },
+      {
+        "kind": "hack",
+        "message": "Защита отключена до тика 662",
+        "robot": 0,
+        "tick": 442
+      },
+      {
+        "kind": "step",
+        "message": "ЛУВР · блок 26 · Передача сигнала",
+        "robot": 0,
+        "tick": 443
+      },
+      {
+        "kind": "signal",
+        "message": "ЛУВР → HACKED = да",
+        "robot": 0,
+        "tick": 443
+      },
+      {
+        "kind": "step",
+        "message": "ЛУВР · блок 27 · Поворот направо",
+        "robot": 0,
+        "tick": 444
+      },
+      {
+        "kind": "step",
+        "message": "МОНА · блок 5 · Шаг вперёд",
+        "robot": 1,
+        "tick": 445
+      },
+      {
+        "kind": "step",
+        "message": "ЛУВР · блок 28 · Шаг вперёд",
+        "robot": 0,
+        "tick": 449
+      },
+      {
+        "kind": "step",
+        "message": "МОНА · блок 6 · Шаг вперёд",
+        "robot": 1,
+        "tick": 455
+      },
+      {
+        "kind": "step",
+        "message": "ЛУВР · блок 29 · Поворот направо",
+        "robot": 0,
+        "tick": 459
+      },
+      {
+        "kind": "step",
+        "message": "ЛУВР · блок 30 · Шаг вперёд",
+        "robot": 0,
+        "tick": 464
+      },
+      {
+        "kind": "step",
+        "message": "МОНА · блок 7 · Шаг вперёд",
+        "robot": 1,
+        "tick": 465
+      },
+      {
+        "kind": "step",
+        "message": "ЛУВР · блок 31 · Шаг вперёд",
+        "robot": 0,
+        "tick": 474
+      },
+      {
+        "kind": "step",
+        "message": "МОНА · блок 8 · Шаг вперёд",
+        "robot": 1,
+        "tick": 475
+      },
+      {
+        "kind": "step",
+        "message": "ЛУВР · блок 32 · Шаг вперёд",
+        "robot": 0,
+        "tick": 484
+      },
+      {
+        "kind": "step",
+        "message": "МОНА · блок 9 · Шаг вперёд",
+        "robot": 1,
+        "tick": 485
+      },
+      {
+        "kind": "step",
+        "message": "ЛУВР · блок 33 · Шаг вперёд",
+        "robot": 0,
+        "tick": 494
+      },
+      {
+        "kind": "step",
+        "message": "МОНА · блок 10 · Взаимодействие",
+        "robot": 1,
+        "tick": 495
+      },
+      {
+        "kind": "step",
+        "message": "ЛУВР · блок 34 · Шаг вперёд",
+        "robot": 0,
+        "tick": 504
+      },
+      {
+        "kind": "step",
+        "message": "ЛУВР · блок 35 · Шаг вперёд",
+        "robot": 0,
+        "tick": 514
+      },
+      {
+        "kind": "step",
+        "message": "ЛУВР · блок 36 · Шаг вперёд",
+        "robot": 0,
+        "tick": 524
+      },
+      {
+        "kind": "step",
+        "message": "ЛУВР · блок 37 · Шаг вперёд",
+        "robot": 0,
+        "tick": 534
+      },
+      {
+        "kind": "take",
+        "message": "МОНА взял E2",
+        "robot": 1,
+        "tick": 534
+      },
+      {
+        "kind": "step",
+        "message": "МОНА · блок 11 · Поворот направо",
+        "robot": 1,
+        "tick": 535
+      },
+      {
+        "kind": "step",
+        "message": "МОНА · блок 12 · Поворот направо",
+        "robot": 1,
+        "tick": 540
+      },
+      {
+        "kind": "step",
+        "message": "ЛУВР · блок 38 · Шаг вперёд",
+        "robot": 0,
+        "tick": 544
+      },
+      {
+        "kind": "step",
+        "message": "МОНА · блок 13 · Шаг вперёд",
+        "robot": 1,
+        "tick": 545
+      },
+      {
+        "kind": "step",
+        "message": "ЛУВР · блок 39 · Поворот налево",
+        "robot": 0,
+        "tick": 554
+      },
+      {
+        "kind": "step",
+        "message": "ЛУВР · блок 40 · Шаг вперёд",
+        "robot": 0,
+        "tick": 559
+      },
+      {
+        "kind": "step",
+        "message": "МОНА · блок 14 · Шаг вперёд",
+        "robot": 1,
+        "tick": 565
+      },
+      {
+        "kind": "step",
+        "message": "ЛУВР · блок 41 · Шаг вперёд",
+        "robot": 0,
+        "tick": 569
+      },
+      {
+        "kind": "step",
+        "message": "ЛУВР · блок 42 · Шаг вперёд",
+        "robot": 0,
+        "tick": 579
+      },
+      {
+        "kind": "step",
+        "message": "МОНА · блок 15 · Шаг вперёд",
+        "robot": 1,
+        "tick": 585
+      },
+      {
+        "kind": "step",
+        "message": "ЛУВР · блок 43 · Шаг вперёд",
+        "robot": 0,
+        "tick": 589
+      },
+      {
+        "kind": "step",
+        "message": "ЛУВР · блок 44 · Поворот направо",
+        "robot": 0,
+        "tick": 599
+      },
+      {
+        "kind": "step",
+        "message": "ЛУВР · блок 45 · Шаг вперёд",
+        "robot": 0,
+        "tick": 604
+      },
+      {
+        "kind": "step",
+        "message": "МОНА · блок 16 · Шаг вперёд",
+        "robot": 1,
+        "tick": 605
+      },
+      {
+        "kind": "step",
+        "message": "ЛУВР · блок 46 · Взаимодействие",
+        "robot": 0,
+        "tick": 614
+      },
+      {
+        "kind": "door",
+        "message": "Кнопка открыла дверь",
+        "robot": 0,
+        "tick": 614
+      },
+      {
+        "kind": "step",
+        "message": "ЛУВР · блок 47 · Ожидание времени",
+        "robot": 0,
+        "tick": 615
+      },
+      {
+        "kind": "step",
+        "message": "МОНА · блок 17 · Шаг вперёд",
+        "robot": 1,
+        "tick": 625
+      },
+      {
+        "kind": "step",
+        "message": "МОНА · блок 18 · Шаг вперёд",
+        "robot": 1,
+        "tick": 645
+      }
+    ],
+    "laser_entry": 454,
+    "laser_exit": 644,
+    "programs": [
+      [
+        {
+          "ticks": 80,
+          "type": "wait"
+        },
+        {
+          "object": "B_G",
+          "type": "interact"
+        },
+        {
+          "signal": "OPEN",
+          "type": "send"
+        },
+        {
+          "type": "left"
+        },
+        {
+          "type": "forward"
+        },
+        {
+          "type": "left"
+        },
+        {
+          "type": "forward"
+        },
+        {
+          "type": "forward"
+        },
+        {
+          "type": "forward"
+        },
+        {
+          "type": "forward"
+        },
+        {
+          "type": "right"
+        },
+        {
+          "type": "forward"
+        },
+        {
+          "type": "forward"
+        },
+        {
+          "type": "forward"
+        },
+        {
+          "type": "forward"
+        },
+        {
+          "type": "forward"
+        },
+        {
+          "type": "left"
+        },
+        {
+          "type": "forward"
+        },
+        {
+          "type": "right"
+        },
+        {
+          "type": "forward"
+        },
+        {
+          "type": "forward"
+        },
+        {
+          "type": "forward"
+        },
+        {
+          "type": "forward"
+        },
+        {
+          "ticks": 125,
+          "type": "wait"
+        },
+        {
+          "object": "T_S",
+          "type": "interact"
+        },
+        {
+          "signal": "HACKED",
+          "type": "send"
+        },
+        {
+          "type": "right"
+        },
+        {
+          "type": "forward"
+        },
+        {
+          "type": "right"
+        },
+        {
+          "type": "forward"
+        },
+        {
+          "type": "forward"
+        },
+        {
+          "type": "forward"
+        },
+        {
+          "type": "forward"
+        },
+        {
+          "type": "forward"
+        },
+        {
+          "type": "forward"
+        },
+        {
+          "type": "forward"
+        },
+        {
+          "type": "forward"
+        },
+        {
+          "type": "forward"
+        },
+        {
+          "type": "left"
+        },
+        {
+          "type": "forward"
+        },
+        {
+          "type": "forward"
+        },
+        {
+          "type": "forward"
+        },
+        {
+          "type": "forward"
+        },
+        {
+          "type": "right"
+        },
+        {
+          "type": "forward"
+        },
+        {
+          "object": "B_G",
+          "type": "interact"
+        },
+        {
+          "ticks": 300,
+          "type": "wait"
+        }
+      ],
+      [
+        {
+          "signal": "OPEN",
+          "type": "wait_signal"
+        },
+        {
+          "type": "left"
+        },
+        {
+          "type": "forward"
+        },
+        {
+          "signal": "HACKED",
+          "type": "wait_signal"
+        },
+        {
+          "type": "forward"
+        },
+        {
+          "type": "forward"
+        },
+        {
+          "type": "forward"
+        },
+        {
+          "type": "forward"
+        },
+        {
+          "type": "forward"
+        },
+        {
+          "object": "E2",
+          "type": "interact"
+        },
+        {
+          "type": "right"
+        },
+        {
+          "type": "right"
+        },
+        {
+          "type": "forward"
+        },
+        {
+          "type": "forward"
+        },
+        {
+          "type": "forward"
+        },
+        {
+          "type": "forward"
+        },
+        {
+          "type": "forward"
+        },
+        {
+          "type": "forward"
+        },
+        {
+          "ticks": 300,
+          "type": "wait"
+        }
+      ],
+      []
+    ],
+    "tick_outside": 664,
+    "window": 220
+  },
+  {
+    "delay_before_hack": 125,
+    "events": [
+      {
+        "kind": "start",
+        "message": "Операция началась",
+        "robot": -1,
+        "tick": 0
+      },
+      {
+        "kind": "step",
+        "message": "ЛУВР · блок 1 · Ожидание времени",
+        "robot": 0,
+        "tick": 1
+      },
+      {
+        "kind": "step",
+        "message": "МОНА · блок 1 · Ожидание сигнала",
+        "robot": 1,
+        "tick": 1
+      },
+      {
+        "kind": "step",
+        "message": "ЛУВР · блок 2 · Взаимодействие",
+        "robot": 0,
+        "tick": 81
+      },
+      {
+        "kind": "door",
+        "message": "Кнопка открыла дверь",
+        "robot": 0,
+        "tick": 81
+      },
+      {
+        "kind": "step",
+        "message": "ЛУВР · блок 3 · Передача сигнала",
+        "robot": 0,
+        "tick": 82
+      },
+      {
+        "kind": "signal",
+        "message": "ЛУВР → OPEN = да",
+        "robot": 0,
+        "tick": 82
+      },
+      {
+        "kind": "step",
+        "message": "ЛУВР · блок 4 · Поворот налево",
+        "robot": 0,
+        "tick": 83
+      },
+      {
+        "kind": "step",
+        "message": "МОНА · блок 2 · Поворот налево",
+        "robot": 1,
+        "tick": 84
+      },
+      {
+        "kind": "step",
+        "message": "ЛУВР · блок 5 · Шаг вперёд",
+        "robot": 0,
+        "tick": 88
+      },
+      {
+        "kind": "step",
+        "message": "МОНА · блок 3 · Шаг вперёд",
+        "robot": 1,
+        "tick": 89
+      },
+      {
+        "kind": "step",
+        "message": "ЛУВР · блок 6 · Поворот налево",
+        "robot": 0,
+        "tick": 98
+      },
+      {
+        "kind": "step",
+        "message": "МОНА · блок 4 · Ожидание сигнала",
+        "robot": 1,
+        "tick": 99
+      },
+      {
+        "kind": "step",
+        "message": "ЛУВР · блок 7 · Шаг вперёд",
+        "robot": 0,
+        "tick": 103
+      },
+      {
+        "kind": "step",
+        "message": "ЛУВР · блок 8 · Шаг вперёд",
+        "robot": 0,
+        "tick": 113
+      },
+      {
+        "kind": "step",
+        "message": "ЛУВР · блок 9 · Шаг вперёд",
+        "robot": 0,
+        "tick": 123
+      },
+      {
+        "kind": "step",
+        "message": "ЛУВР · блок 10 · Шаг вперёд",
+        "robot": 0,
+        "tick": 133
+      },
+      {
+        "kind": "step",
+        "message": "ЛУВР · блок 11 · Поворот направо",
+        "robot": 0,
+        "tick": 143
+      },
+      {
+        "kind": "step",
+        "message": "ЛУВР · блок 12 · Шаг вперёд",
+        "robot": 0,
+        "tick": 148
+      },
+      {
+        "kind": "step",
+        "message": "ЛУВР · блок 13 · Шаг вперёд",
+        "robot": 0,
+        "tick": 158
+      },
+      {
+        "kind": "step",
+        "message": "ЛУВР · блок 14 · Шаг вперёд",
+        "robot": 0,
+        "tick": 168
+      },
+      {
+        "kind": "step",
+        "message": "ЛУВР · блок 15 · Шаг вперёд",
+        "robot": 0,
+        "tick": 178
+      },
+      {
+        "kind": "step",
+        "message": "ЛУВР · блок 16 · Шаг вперёд",
+        "robot": 0,
+        "tick": 188
+      },
+      {
+        "kind": "step",
+        "message": "ЛУВР · блок 17 · Поворот налево",
+        "robot": 0,
+        "tick": 198
+      },
+      {
+        "kind": "step",
+        "message": "ЛУВР · блок 18 · Шаг вперёд",
+        "robot": 0,
+        "tick": 203
+      },
+      {
+        "kind": "step",
+        "message": "ЛУВР · блок 19 · Поворот направо",
+        "robot": 0,
+        "tick": 213
+      },
+      {
+        "kind": "step",
+        "message": "ЛУВР · блок 20 · Шаг вперёд",
+        "robot": 0,
+        "tick": 218
+      },
+      {
+        "kind": "step",
+        "message": "ЛУВР · блок 21 · Шаг вперёд",
+        "robot": 0,
+        "tick": 228
+      },
+      {
+        "kind": "step",
+        "message": "ЛУВР · блок 22 · Шаг вперёд",
+        "robot": 0,
+        "tick": 238
+      },
+      {
+        "kind": "step",
+        "message": "ЛУВР · блок 23 · Шаг вперёд",
+        "robot": 0,
+        "tick": 248
+      },
+      {
+        "kind": "step",
+        "message": "ЛУВР · блок 24 · Ожидание времени",
+        "robot": 0,
+        "tick": 258
+      },
+      {
+        "kind": "step",
+        "message": "ЛУВР · блок 25 · Взаимодействие",
+        "robot": 0,
+        "tick": 383
+      },
+      {
+        "kind": "hack",
+        "message": "Защита отключена до тика 682",
+        "robot": 0,
+        "tick": 442
+      },
+      {
+        "kind": "step",
+        "message": "ЛУВР · блок 26 · Передача сигнала",
+        "robot": 0,
+        "tick": 443
+      },
+      {
+        "kind": "signal",
+        "message": "ЛУВР → HACKED = да",
+        "robot": 0,
+        "tick": 443
+      },
+      {
+        "kind": "step",
+        "message": "ЛУВР · блок 27 · Поворот направо",
+        "robot": 0,
+        "tick": 444
+      },
+      {
+        "kind": "step",
+        "message": "МОНА · блок 5 · Шаг вперёд",
+        "robot": 1,
+        "tick": 445
+      },
+      {
+        "kind": "step",
+        "message": "ЛУВР · блок 28 · Шаг вперёд",
+        "robot": 0,
+        "tick": 449
+      },
+      {
+        "kind": "step",
+        "message": "МОНА · блок 6 · Шаг вперёд",
+        "robot": 1,
+        "tick": 455
+      },
+      {
+        "kind": "step",
+        "message": "ЛУВР · блок 29 · Поворот направо",
+        "robot": 0,
+        "tick": 459
+      },
+      {
+        "kind": "step",
+        "message": "ЛУВР · блок 30 · Шаг вперёд",
+        "robot": 0,
+        "tick": 464
+      },
+      {
+        "kind": "step",
+        "message": "МОНА · блок 7 · Шаг вперёд",
+        "robot": 1,
+        "tick": 465
+      },
+      {
+        "kind": "step",
+        "message": "ЛУВР · блок 31 · Шаг вперёд",
+        "robot": 0,
+        "tick": 474
+      },
+      {
+        "kind": "step",
+        "message": "МОНА · блок 8 · Шаг вперёд",
+        "robot": 1,
+        "tick": 475
+      },
+      {
+        "kind": "step",
+        "message": "ЛУВР · блок 32 · Шаг вперёд",
+        "robot": 0,
+        "tick": 484
+      },
+      {
+        "kind": "step",
+        "message": "МОНА · блок 9 · Шаг вперёд",
+        "robot": 1,
+        "tick": 485
+      },
+      {
+        "kind": "step",
+        "message": "ЛУВР · блок 33 · Шаг вперёд",
+        "robot": 0,
+        "tick": 494
+      },
+      {
+        "kind": "step",
+        "message": "МОНА · блок 10 · Взаимодействие",
+        "robot": 1,
+        "tick": 495
+      },
+      {
+        "kind": "step",
+        "message": "ЛУВР · блок 34 · Шаг вперёд",
+        "robot": 0,
+        "tick": 504
+      },
+      {
+        "kind": "step",
+        "message": "ЛУВР · блок 35 · Шаг вперёд",
+        "robot": 0,
+        "tick": 514
+      },
+      {
+        "kind": "step",
+        "message": "ЛУВР · блок 36 · Шаг вперёд",
+        "robot": 0,
+        "tick": 524
+      },
+      {
+        "kind": "step",
+        "message": "ЛУВР · блок 37 · Шаг вперёд",
+        "robot": 0,
+        "tick": 534
+      },
+      {
+        "kind": "take",
+        "message": "МОНА взял E2",
+        "robot": 1,
+        "tick": 534
+      },
+      {
+        "kind": "step",
+        "message": "МОНА · блок 11 · Поворот направо",
+        "robot": 1,
+        "tick": 535
+      },
+      {
+        "kind": "step",
+        "message": "МОНА · блок 12 · Поворот направо",
+        "robot": 1,
+        "tick": 540
+      },
+      {
+        "kind": "step",
+        "message": "ЛУВР · блок 38 · Шаг вперёд",
+        "robot": 0,
+        "tick": 544
+      },
+      {
+        "kind": "step",
+        "message": "МОНА · блок 13 · Шаг вперёд",
+        "robot": 1,
+        "tick": 545
+      },
+      {
+        "kind": "step",
+        "message": "ЛУВР · блок 39 · Поворот налево",
+        "robot": 0,
+        "tick": 554
+      },
+      {
+        "kind": "step",
+        "message": "ЛУВР · блок 40 · Шаг вперёд",
+        "robot": 0,
+        "tick": 559
+      },
+      {
+        "kind": "step",
+        "message": "МОНА · блок 14 · Шаг вперёд",
+        "robot": 1,
+        "tick": 565
+      },
+      {
+        "kind": "step",
+        "message": "ЛУВР · блок 41 · Шаг вперёд",
+        "robot": 0,
+        "tick": 569
+      },
+      {
+        "kind": "step",
+        "message": "ЛУВР · блок 42 · Шаг вперёд",
+        "robot": 0,
+        "tick": 579
+      },
+      {
+        "kind": "step",
+        "message": "МОНА · блок 15 · Шаг вперёд",
+        "robot": 1,
+        "tick": 585
+      },
+      {
+        "kind": "step",
+        "message": "ЛУВР · блок 43 · Шаг вперёд",
+        "robot": 0,
+        "tick": 589
+      },
+      {
+        "kind": "step",
+        "message": "ЛУВР · блок 44 · Поворот направо",
+        "robot": 0,
+        "tick": 599
+      },
+      {
+        "kind": "step",
+        "message": "ЛУВР · блок 45 · Шаг вперёд",
+        "robot": 0,
+        "tick": 604
+      },
+      {
+        "kind": "step",
+        "message": "МОНА · блок 16 · Шаг вперёд",
+        "robot": 1,
+        "tick": 605
+      },
+      {
+        "kind": "step",
+        "message": "ЛУВР · блок 46 · Взаимодействие",
+        "robot": 0,
+        "tick": 614
+      },
+      {
+        "kind": "door",
+        "message": "Кнопка открыла дверь",
+        "robot": 0,
+        "tick": 614
+      },
+      {
+        "kind": "step",
+        "message": "ЛУВР · блок 47 · Ожидание времени",
+        "robot": 0,
+        "tick": 615
+      },
+      {
+        "kind": "step",
+        "message": "МОНА · блок 17 · Шаг вперёд",
+        "robot": 1,
+        "tick": 625
+      },
+      {
+        "kind": "step",
+        "message": "МОНА · блок 18 · Шаг вперёд",
+        "robot": 1,
+        "tick": 645
+      }
+    ],
+    "laser_entry": 454,
+    "laser_exit": 644,
+    "programs": [
+      [
+        {
+          "ticks": 80,
+          "type": "wait"
+        },
+        {
+          "object": "B_G",
+          "type": "interact"
+        },
+        {
+          "signal": "OPEN",
+          "type": "send"
+        },
+        {
+          "type": "left"
+        },
+        {
+          "type": "forward"
+        },
+        {
+          "type": "left"
+        },
+        {
+          "type": "forward"
+        },
+        {
+          "type": "forward"
+        },
+        {
+          "type": "forward"
+        },
+        {
+          "type": "forward"
+        },
+        {
+          "type": "right"
+        },
+        {
+          "type": "forward"
+        },
+        {
+          "type": "forward"
+        },
+        {
+          "type": "forward"
+        },
+        {
+          "type": "forward"
+        },
+        {
+          "type": "forward"
+        },
+        {
+          "type": "left"
+        },
+        {
+          "type": "forward"
+        },
+        {
+          "type": "right"
+        },
+        {
+          "type": "forward"
+        },
+        {
+          "type": "forward"
+        },
+        {
+          "type": "forward"
+        },
+        {
+          "type": "forward"
+        },
+        {
+          "ticks": 125,
+          "type": "wait"
+        },
+        {
+          "object": "T_S",
+          "type": "interact"
+        },
+        {
+          "signal": "HACKED",
+          "type": "send"
+        },
+        {
+          "type": "right"
+        },
+        {
+          "type": "forward"
+        },
+        {
+          "type": "right"
+        },
+        {
+          "type": "forward"
+        },
+        {
+          "type": "forward"
+        },
+        {
+          "type": "forward"
+        },
+        {
+          "type": "forward"
+        },
+        {
+          "type": "forward"
+        },
+        {
+          "type": "forward"
+        },
+        {
+          "type": "forward"
+        },
+        {
+          "type": "forward"
+        },
+        {
+          "type": "forward"
+        },
+        {
+          "type": "left"
+        },
+        {
+          "type": "forward"
+        },
+        {
+          "type": "forward"
+        },
+        {
+          "type": "forward"
+        },
+        {
+          "type": "forward"
+        },
+        {
+          "type": "right"
+        },
+        {
+          "type": "forward"
+        },
+        {
+          "object": "B_G",
+          "type": "interact"
+        },
+        {
+          "ticks": 300,
+          "type": "wait"
+        }
+      ],
+      [
+        {
+          "signal": "OPEN",
+          "type": "wait_signal"
+        },
+        {
+          "type": "left"
+        },
+        {
+          "type": "forward"
+        },
+        {
+          "signal": "HACKED",
+          "type": "wait_signal"
+        },
+        {
+          "type": "forward"
+        },
+        {
+          "type": "forward"
+        },
+        {
+          "type": "forward"
+        },
+        {
+          "type": "forward"
+        },
+        {
+          "type": "forward"
+        },
+        {
+          "object": "E2",
+          "type": "interact"
+        },
+        {
+          "type": "right"
+        },
+        {
+          "type": "right"
+        },
+        {
+          "type": "forward"
+        },
+        {
+          "type": "forward"
+        },
+        {
+          "type": "forward"
+        },
+        {
+          "type": "forward"
+        },
+        {
+          "type": "forward"
+        },
+        {
+          "type": "forward"
+        },
+        {
+          "ticks": 300,
+          "type": "wait"
+        }
+      ],
+      []
+    ],
+    "tick_outside": 664,
+    "window": 240
+  },
+  {
+    "delay_before_hack": 125,
+    "events": [
+      {
+        "kind": "start",
+        "message": "Операция началась",
+        "robot": -1,
+        "tick": 0
+      },
+      {
+        "kind": "step",
+        "message": "ЛУВР · блок 1 · Ожидание времени",
+        "robot": 0,
+        "tick": 1
+      },
+      {
+        "kind": "step",
+        "message": "МОНА · блок 1 · Ожидание сигнала",
+        "robot": 1,
+        "tick": 1
+      },
+      {
+        "kind": "step",
+        "message": "ЛУВР · блок 2 · Взаимодействие",
+        "robot": 0,
+        "tick": 81
+      },
+      {
+        "kind": "door",
+        "message": "Кнопка открыла дверь",
+        "robot": 0,
+        "tick": 81
+      },
+      {
+        "kind": "step",
+        "message": "ЛУВР · блок 3 · Передача сигнала",
+        "robot": 0,
+        "tick": 82
+      },
+      {
+        "kind": "signal",
+        "message": "ЛУВР → OPEN = да",
+        "robot": 0,
+        "tick": 82
+      },
+      {
+        "kind": "step",
+        "message": "ЛУВР · блок 4 · Поворот налево",
+        "robot": 0,
+        "tick": 83
+      },
+      {
+        "kind": "step",
+        "message": "МОНА · блок 2 · Поворот налево",
+        "robot": 1,
+        "tick": 84
+      },
+      {
+        "kind": "step",
+        "message": "ЛУВР · блок 5 · Шаг вперёд",
+        "robot": 0,
+        "tick": 88
+      },
+      {
+        "kind": "step",
+        "message": "МОНА · блок 3 · Шаг вперёд",
+        "robot": 1,
+        "tick": 89
+      },
+      {
+        "kind": "step",
+        "message": "ЛУВР · блок 6 · Поворот налево",
+        "robot": 0,
+        "tick": 98
+      },
+      {
+        "kind": "step",
+        "message": "МОНА · блок 4 · Ожидание сигнала",
+        "robot": 1,
+        "tick": 99
+      },
+      {
+        "kind": "step",
+        "message": "ЛУВР · блок 7 · Шаг вперёд",
+        "robot": 0,
+        "tick": 103
+      },
+      {
+        "kind": "step",
+        "message": "ЛУВР · блок 8 · Шаг вперёд",
+        "robot": 0,
+        "tick": 113
+      },
+      {
+        "kind": "step",
+        "message": "ЛУВР · блок 9 · Шаг вперёд",
+        "robot": 0,
+        "tick": 123
+      },
+      {
+        "kind": "step",
+        "message": "ЛУВР · блок 10 · Шаг вперёд",
+        "robot": 0,
+        "tick": 133
+      },
+      {
+        "kind": "step",
+        "message": "ЛУВР · блок 11 · Поворот направо",
+        "robot": 0,
+        "tick": 143
+      },
+      {
+        "kind": "step",
+        "message": "ЛУВР · блок 12 · Шаг вперёд",
+        "robot": 0,
+        "tick": 148
+      },
+      {
+        "kind": "step",
+        "message": "ЛУВР · блок 13 · Шаг вперёд",
+        "robot": 0,
+        "tick": 158
+      },
+      {
+        "kind": "step",
+        "message": "ЛУВР · блок 14 · Шаг вперёд",
+        "robot": 0,
+        "tick": 168
+      },
+      {
+        "kind": "step",
+        "message": "ЛУВР · блок 15 · Шаг вперёд",
+        "robot": 0,
+        "tick": 178
+      },
+      {
+        "kind": "step",
+        "message": "ЛУВР · блок 16 · Шаг вперёд",
+        "robot": 0,
+        "tick": 188
+      },
+      {
+        "kind": "step",
+        "message": "ЛУВР · блок 17 · Поворот налево",
+        "robot": 0,
+        "tick": 198
+      },
+      {
+        "kind": "step",
+        "message": "ЛУВР · блок 18 · Шаг вперёд",
+        "robot": 0,
+        "tick": 203
+      },
+      {
+        "kind": "step",
+        "message": "ЛУВР · блок 19 · Поворот направо",
+        "robot": 0,
+        "tick": 213
+      },
+      {
+        "kind": "step",
+        "message": "ЛУВР · блок 20 · Шаг вперёд",
+        "robot": 0,
+        "tick": 218
+      },
+      {
+        "kind": "step",
+        "message": "ЛУВР · блок 21 · Шаг вперёд",
+        "robot": 0,
+        "tick": 228
+      },
+      {
+        "kind": "step",
+        "message": "ЛУВР · блок 22 · Шаг вперёд",
+        "robot": 0,
+        "tick": 238
+      },
+      {
+        "kind": "step",
+        "message": "ЛУВР · блок 23 · Шаг вперёд",
+        "robot": 0,
+        "tick": 248
+      },
+      {
+        "kind": "step",
+        "message": "ЛУВР · блок 24 · Ожидание времени",
+        "robot": 0,
+        "tick": 258
+      },
+      {
+        "kind": "step",
+        "message": "ЛУВР · блок 25 · Взаимодействие",
+        "robot": 0,
+        "tick": 383
+      },
+      {
+        "kind": "hack",
+        "message": "Защита отключена до тика 702",
+        "robot": 0,
+        "tick": 442
+      },
+      {
+        "kind": "step",
+        "message": "ЛУВР · блок 26 · Передача сигнала",
+        "robot": 0,
+        "tick": 443
+      },
+      {
+        "kind": "signal",
+        "message": "ЛУВР → HACKED = да",
+        "robot": 0,
+        "tick": 443
+      },
+      {
+        "kind": "step",
+        "message": "ЛУВР · блок 27 · Поворот направо",
+        "robot": 0,
+        "tick": 444
+      },
+      {
+        "kind": "step",
+        "message": "МОНА · блок 5 · Шаг вперёд",
+        "robot": 1,
+        "tick": 445
+      },
+      {
+        "kind": "step",
+        "message": "ЛУВР · блок 28 · Шаг вперёд",
+        "robot": 0,
+        "tick": 449
+      },
+      {
+        "kind": "step",
+        "message": "МОНА · блок 6 · Шаг вперёд",
+        "robot": 1,
+        "tick": 455
+      },
+      {
+        "kind": "step",
+        "message": "ЛУВР · блок 29 · Поворот направо",
+        "robot": 0,
+        "tick": 459
+      },
+      {
+        "kind": "step",
+        "message": "ЛУВР · блок 30 · Шаг вперёд",
+        "robot": 0,
+        "tick": 464
+      },
+      {
+        "kind": "step",
+        "message": "МОНА · блок 7 · Шаг вперёд",
+        "robot": 1,
+        "tick": 465
+      },
+      {
+        "kind": "step",
+        "message": "ЛУВР · блок 31 · Шаг вперёд",
+        "robot": 0,
+        "tick": 474
+      },
+      {
+        "kind": "step",
+        "message": "МОНА · блок 8 · Шаг вперёд",
+        "robot": 1,
+        "tick": 475
+      },
+      {
+        "kind": "step",
+        "message": "ЛУВР · блок 32 · Шаг вперёд",
+        "robot": 0,
+        "tick": 484
+      },
+      {
+        "kind": "step",
+        "message": "МОНА · блок 9 · Шаг вперёд",
+        "robot": 1,
+        "tick": 485
+      },
+      {
+        "kind": "step",
+        "message": "ЛУВР · блок 33 · Шаг вперёд",
+        "robot": 0,
+        "tick": 494
+      },
+      {
+        "kind": "step",
+        "message": "МОНА · блок 10 · Взаимодействие",
+        "robot": 1,
+        "tick": 495
+      },
+      {
+        "kind": "step",
+        "message": "ЛУВР · блок 34 · Шаг вперёд",
+        "robot": 0,
+        "tick": 504
+      },
+      {
+        "kind": "step",
+        "message": "ЛУВР · блок 35 · Шаг вперёд",
+        "robot": 0,
+        "tick": 514
+      },
+      {
+        "kind": "step",
+        "message": "ЛУВР · блок 36 · Шаг вперёд",
+        "robot": 0,
+        "tick": 524
+      },
+      {
+        "kind": "step",
+        "message": "ЛУВР · блок 37 · Шаг вперёд",
+        "robot": 0,
+        "tick": 534
+      },
+      {
+        "kind": "take",
+        "message": "МОНА взял E2",
+        "robot": 1,
+        "tick": 534
+      },
+      {
+        "kind": "step",
+        "message": "МОНА · блок 11 · Поворот направо",
+        "robot": 1,
+        "tick": 535
+      },
+      {
+        "kind": "step",
+        "message": "МОНА · блок 12 · Поворот направо",
+        "robot": 1,
+        "tick": 540
+      },
+      {
+        "kind": "step",
+        "message": "ЛУВР · блок 38 · Шаг вперёд",
+        "robot": 0,
+        "tick": 544
+      },
+      {
+        "kind": "step",
+        "message": "МОНА · блок 13 · Шаг вперёд",
+        "robot": 1,
+        "tick": 545
+      },
+      {
+        "kind": "step",
+        "message": "ЛУВР · блок 39 · Поворот налево",
+        "robot": 0,
+        "tick": 554
+      },
+      {
+        "kind": "step",
+        "message": "ЛУВР · блок 40 · Шаг вперёд",
+        "robot": 0,
+        "tick": 559
+      },
+      {
+        "kind": "step",
+        "message": "МОНА · блок 14 · Шаг вперёд",
+        "robot": 1,
+        "tick": 565
+      },
+      {
+        "kind": "step",
+        "message": "ЛУВР · блок 41 · Шаг вперёд",
+        "robot": 0,
+        "tick": 569
+      },
+      {
+        "kind": "step",
+        "message": "ЛУВР · блок 42 · Шаг вперёд",
+        "robot": 0,
+        "tick": 579
+      },
+      {
+        "kind": "step",
+        "message": "МОНА · блок 15 · Шаг вперёд",
+        "robot": 1,
+        "tick": 585
+      },
+      {
+        "kind": "step",
+        "message": "ЛУВР · блок 43 · Шаг вперёд",
+        "robot": 0,
+        "tick": 589
+      },
+      {
+        "kind": "step",
+        "message": "ЛУВР · блок 44 · Поворот направо",
+        "robot": 0,
+        "tick": 599
+      },
+      {
+        "kind": "step",
+        "message": "ЛУВР · блок 45 · Шаг вперёд",
+        "robot": 0,
+        "tick": 604
+      },
+      {
+        "kind": "step",
+        "message": "МОНА · блок 16 · Шаг вперёд",
+        "robot": 1,
+        "tick": 605
+      },
+      {
+        "kind": "step",
+        "message": "ЛУВР · блок 46 · Взаимодействие",
+        "robot": 0,
+        "tick": 614
+      },
+      {
+        "kind": "door",
+        "message": "Кнопка открыла дверь",
+        "robot": 0,
+        "tick": 614
+      },
+      {
+        "kind": "step",
+        "message": "ЛУВР · блок 47 · Ожидание времени",
+        "robot": 0,
+        "tick": 615
+      },
+      {
+        "kind": "step",
+        "message": "МОНА · блок 17 · Шаг вперёд",
+        "robot": 1,
+        "tick": 625
+      },
+      {
+        "kind": "step",
+        "message": "МОНА · блок 18 · Шаг вперёд",
+        "robot": 1,
+        "tick": 645
+      }
+    ],
+    "laser_entry": 454,
+    "laser_exit": 644,
+    "programs": [
+      [
+        {
+          "ticks": 80,
+          "type": "wait"
+        },
+        {
+          "object": "B_G",
+          "type": "interact"
+        },
+        {
+          "signal": "OPEN",
+          "type": "send"
+        },
+        {
+          "type": "left"
+        },
+        {
+          "type": "forward"
+        },
+        {
+          "type": "left"
+        },
+        {
+          "type": "forward"
+        },
+        {
+          "type": "forward"
+        },
+        {
+          "type": "forward"
+        },
+        {
+          "type": "forward"
+        },
+        {
+          "type": "right"
+        },
+        {
+          "type": "forward"
+        },
+        {
+          "type": "forward"
+        },
+        {
+          "type": "forward"
+        },
+        {
+          "type": "forward"
+        },
+        {
+          "type": "forward"
+        },
+        {
+          "type": "left"
+        },
+        {
+          "type": "forward"
+        },
+        {
+          "type": "right"
+        },
+        {
+          "type": "forward"
+        },
+        {
+          "type": "forward"
+        },
+        {
+          "type": "forward"
+        },
+        {
+          "type": "forward"
+        },
+        {
+          "ticks": 125,
+          "type": "wait"
+        },
+        {
+          "object": "T_S",
+          "type": "interact"
+        },
+        {
+          "signal": "HACKED",
+          "type": "send"
+        },
+        {
+          "type": "right"
+        },
+        {
+          "type": "forward"
+        },
+        {
+          "type": "right"
+        },
+        {
+          "type": "forward"
+        },
+        {
+          "type": "forward"
+        },
+        {
+          "type": "forward"
+        },
+        {
+          "type": "forward"
+        },
+        {
+          "type": "forward"
+        },
+        {
+          "type": "forward"
+        },
+        {
+          "type": "forward"
+        },
+        {
+          "type": "forward"
+        },
+        {
+          "type": "forward"
+        },
+        {
+          "type": "left"
+        },
+        {
+          "type": "forward"
+        },
+        {
+          "type": "forward"
+        },
+        {
+          "type": "forward"
+        },
+        {
+          "type": "forward"
+        },
+        {
+          "type": "right"
+        },
+        {
+          "type": "forward"
+        },
+        {
+          "object": "B_G",
+          "type": "interact"
+        },
+        {
+          "ticks": 300,
+          "type": "wait"
+        }
+      ],
+      [
+        {
+          "signal": "OPEN",
+          "type": "wait_signal"
+        },
+        {
+          "type": "left"
+        },
+        {
+          "type": "forward"
+        },
+        {
+          "signal": "HACKED",
+          "type": "wait_signal"
+        },
+        {
+          "type": "forward"
+        },
+        {
+          "type": "forward"
+        },
+        {
+          "type": "forward"
+        },
+        {
+          "type": "forward"
+        },
+        {
+          "type": "forward"
+        },
+        {
+          "object": "E2",
+          "type": "interact"
+        },
+        {
+          "type": "right"
+        },
+        {
+          "type": "right"
+        },
+        {
+          "type": "forward"
+        },
+        {
+          "type": "forward"
+        },
+        {
+          "type": "forward"
+        },
+        {
+          "type": "forward"
+        },
+        {
+          "type": "forward"
+        },
+        {
+          "type": "forward"
+        },
+        {
+          "ticks": 300,
+          "type": "wait"
+        }
+      ],
+      []
+    ],
+    "tick_outside": 664,
+    "window": 260
+  }
+]

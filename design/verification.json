@@ -1,0 +1,311 @@
+{
+  "ablations": [
+    {
+      "mission": 8,
+      "removed": "noise",
+      "result": "running",
+      "tick": 11000
+    },
+    {
+      "mission": 8,
+      "removed": "camera",
+      "result": "lost",
+      "tick": 468
+    },
+    {
+      "mission": 8,
+      "removed": "vault",
+      "result": "lost",
+      "tick": 651
+    },
+    {
+      "mission": 8,
+      "removed": "button",
+      "result": "running",
+      "tick": 11000
+    }
+  ],
+  "failures": 0,
+  "fixed": [
+    {
+      "mission": 8,
+      "result": "won",
+      "scenario": 1,
+      "tick": 5395
+    },
+    {
+      "mission": 8,
+      "result": "lost",
+      "scenario": 2,
+      "tick": 110
+    },
+    {
+      "mission": 8,
+      "result": "lost",
+      "scenario": 3,
+      "tick": 151
+    }
+  ],
+  "movement": {
+    "loaded_step": 20,
+    "step": 10,
+    "turn": 5
+  },
+  "passed": 93,
+  "reference": [
+    {
+      "case": 1,
+      "milestones": [],
+      "result": "won",
+      "tick": 44
+    },
+    {
+      "case": 2,
+      "milestones": [
+        {
+          "kind": "hack",
+          "message": "Защита отключена до тика 265",
+          "robot": 0,
+          "tick": 65
+        }
+      ],
+      "result": "won",
+      "tick": 156
+    },
+    {
+      "case": 3,
+      "milestones": [],
+      "result": "won",
+      "tick": 246
+    },
+    {
+      "case": 4,
+      "milestones": [
+        {
+          "kind": "noise",
+          "message": "Охранник услышал шум в (6, 5)",
+          "robot": 0,
+          "tick": 51
+        }
+      ],
+      "result": "won",
+      "tick": 249
+    },
+    {
+      "case": 5,
+      "milestones": [],
+      "result": "won",
+      "tick": 228
+    },
+    {
+      "case": 6,
+      "milestones": [
+        {
+          "kind": "take",
+          "message": "МОНА взял Алмаз",
+          "robot": 1,
+          "tick": 104
+        },
+        {
+          "kind": "deposit",
+          "message": "МОНА доставил Алмаз",
+          "robot": 1,
+          "tick": 274
+        },
+        {
+          "kind": "take",
+          "message": "МОНА взял Алмаз",
+          "robot": 1,
+          "tick": 406
+        },
+        {
+          "kind": "deposit",
+          "message": "МОНА доставил Алмаз",
+          "robot": 1,
+          "tick": 576
+        }
+      ],
+      "result": "won",
+      "tick": 851
+    },
+    {
+      "case": 7,
+      "milestones": [
+        {
+          "kind": "hack",
+          "message": "Защита отключена до тика 673",
+          "robot": 0,
+          "tick": 513
+        },
+        {
+          "kind": "take",
+          "message": "ЛИЗА взял Алмаз",
+          "robot": 2,
+          "tick": 583
+        },
+        {
+          "kind": "deposit",
+          "message": "ЛИЗА доставил Алмаз",
+          "robot": 2,
+          "tick": 1342
+        }
+      ],
+      "result": "won",
+      "tick": 1342
+    },
+    {
+      "case": 8,
+      "milestones": [
+        {
+          "kind": "hack",
+          "message": "Защита отключена до тика 915",
+          "robot": 1,
+          "tick": 435
+        },
+        {
+          "kind": "noise",
+          "message": "Охранник услышал шум в (14, 10)",
+          "robot": 1,
+          "tick": 436
+        },
+        {
+          "kind": "hack",
+          "message": "Защита отключена до тика 958",
+          "robot": 0,
+          "tick": 678
+        },
+        {
+          "kind": "take",
+          "message": "ЛИЗА взял Золотой банан",
+          "robot": 2,
+          "tick": 746
+        },
+        {
+          "kind": "hack",
+          "message": "Защита отключена до тика 1515",
+          "robot": 1,
+          "tick": 1035
+        },
+        {
+          "kind": "noise",
+          "message": "Охранник услышал шум в (14, 10)",
+          "robot": 1,
+          "tick": 1036
+        },
+        {
+          "kind": "deposit",
+          "message": "ЛИЗА доставил Золотой банан",
+          "robot": 2,
+          "tick": 1705
+        },
+        {
+          "kind": "hack",
+          "message": "Защита отключена до тика 2700",
+          "robot": 1,
+          "tick": 2220
+        },
+        {
+          "kind": "noise",
+          "message": "Охранник услышал шум в (14, 10)",
+          "robot": 1,
+          "tick": 2221
+        },
+        {
+          "kind": "hack",
+          "message": "Защита отключена до тика 2743",
+          "robot": 0,
+          "tick": 2463
+        },
+        {
+          "kind": "take",
+          "message": "ЛИЗА взял Золотой слиток",
+          "robot": 2,
+          "tick": 2555
+        },
+        {
+          "kind": "hack",
+          "message": "Защита отключена до тика 3300",
+          "robot": 1,
+          "tick": 2820
+        },
+        {
+          "kind": "noise",
+          "message": "Охранник услышал шум в (14, 10)",
+          "robot": 1,
+          "tick": 2821
+        },
+        {
+          "kind": "deposit",
+          "message": "ЛИЗА доставил Золотой слиток",
+          "robot": 2,
+          "tick": 3490
+        },
+        {
+          "kind": "hack",
+          "message": "Защита отключена до тика 4305",
+          "robot": 1,
+          "tick": 3825
+        },
+        {
+          "kind": "noise",
+          "message": "Охранник услышал шум в (14, 10)",
+          "robot": 1,
+          "tick": 3826
+        },
+        {
+          "kind": "hack",
+          "message": "Защита отключена до тика 4348",
+          "robot": 0,
+          "tick": 4068
+        },
+        {
+          "kind": "take",
+          "message": "ЛИЗА взял Алмаз",
+          "robot": 2,
+          "tick": 4184
+        },
+        {
+          "kind": "hack",
+          "message": "Защита отключена до тика 4905",
+          "robot": 1,
+          "tick": 4425
+        },
+        {
+          "kind": "noise",
+          "message": "Охранник услышал шум в (14, 10)",
+          "robot": 1,
+          "tick": 4426
+        },
+        {
+          "kind": "deposit",
+          "message": "ЛИЗА доставил Алмаз",
+          "robot": 2,
+          "tick": 5095
+        }
+      ],
+      "result": "won",
+      "tick": 5395
+    }
+  ],
+  "scenarios": [
+    {
+      "mission": 8,
+      "result": "won",
+      "scenario": 1,
+      "tick": 5395
+    },
+    {
+      "mission": 8,
+      "result": "won",
+      "scenario": 2,
+      "tick": 5095
+    },
+    {
+      "mission": 8,
+      "result": "won",
+      "scenario": 3,
+      "tick": 5535
+    }
+  ],
+  "version": 6
+}

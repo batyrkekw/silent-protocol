@@ -1,0 +1,67 @@
+{
+  "id": 1,
+  "name": "Терминал",
+  "grid": [
+    "###########",
+    "#1...#...E#",
+    "#.T..L....#",
+    "###########"
+  ],
+  "objects": [
+    {
+      "id": "exit1",
+      "type": "exit",
+      "pos": [
+        9,
+        1
+      ]
+    },
+    {
+      "id": "terminal1",
+      "type": "terminal",
+      "pos": [
+        2,
+        2
+      ],
+      "hack": 40,
+      "window": 200,
+      "cooldown": 0,
+      "circuit": "vault"
+    }
+  ],
+  "robots": [
+    {
+      "id": 0,
+      "pos": [
+        1,
+        1
+      ]
+    }
+  ],
+  "guards": [],
+  "cameras": [],
+  "lasers": [
+    {
+      "id": "L",
+      "cells": [
+        [
+          5,
+          2
+        ]
+      ],
+      "circuit": "vault"
+    }
+  ],
+  "scenarios": [],
+  "win": {
+    "all_items_delivered": true,
+    "all_active_robots_at_exit": true
+  },
+  "noise": {
+    "range": 5,
+    "hearing": 8,
+    "inspect": 120,
+    "cooldown": 200
+  },
+  "hint": "Взломайте терминал и дождитесь отключения лазера."
+}

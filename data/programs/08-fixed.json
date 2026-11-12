@@ -1,0 +1,4254 @@
+[
+  [
+    {
+      "type": "forward"
+    },
+    {
+      "type": "left"
+    },
+    {
+      "ticks": 105,
+      "type": "wait"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "left"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "right"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "right"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 370,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "object": "terminal1",
+      "type": "interact"
+    },
+    {
+      "signal": "ВЗЛОМ_ГОТОВ",
+      "type": "send",
+      "value": true
+    },
+    {
+      "ticks": 114,
+      "type": "wait"
+    },
+    {
+      "signal": "ВЗЛОМ_ГОТОВ",
+      "type": "send",
+      "value": false
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1604,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "object": "terminal1",
+      "type": "interact"
+    },
+    {
+      "signal": "ВЗЛОМ_ГОТОВ",
+      "type": "send",
+      "value": true
+    },
+    {
+      "ticks": 182,
+      "type": "wait"
+    },
+    {
+      "signal": "ВЗЛОМ_ГОТОВ",
+      "type": "send",
+      "value": false
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1356,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "object": "terminal1",
+      "type": "interact"
+    },
+    {
+      "signal": "ВЗЛОМ_ГОТОВ",
+      "type": "send",
+      "value": true
+    },
+    {
+      "ticks": 250,
+      "type": "wait"
+    },
+    {
+      "signal": "ВЗЛОМ_ГОТОВ",
+      "type": "send",
+      "value": false
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 773,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "right"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "ticks": 146,
+      "type": "wait"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "right"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    }
+  ],
+  [
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "right"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "left"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "ticks": 30,
+      "type": "wait"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "left"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 40,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 40,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 40,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 40,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 40,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "object": "terminal2",
+      "type": "interact"
+    },
+    {
+      "target": [
+        14.0,
+        10.0
+      ],
+      "type": "noise"
+    },
+    {
+      "ticks": 48,
+      "type": "wait"
+    },
+    {
+      "signal": "ПРОХОД_ГОТОВ",
+      "type": "send",
+      "value": true
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 40,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 40,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 40,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "object": "button1",
+      "type": "interact"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 40,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "object": "button1",
+      "type": "interact"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 40,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "object": "button1",
+      "type": "interact"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 40,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "object": "button1",
+      "type": "interact"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 40,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 179,
+      "type": "wait"
+    },
+    {
+      "object": "terminal2",
+      "type": "interact"
+    },
+    {
+      "target": [
+        14.0,
+        10.0
+      ],
+      "type": "noise"
+    },
+    {
+      "ticks": 48,
+      "type": "wait"
+    },
+    {
+      "signal": "ПРОХОД_ГОТОВ",
+      "type": "send",
+      "value": true
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 40,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 40,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 40,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 40,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 40,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 40,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 40,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 40,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 40,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 40,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 40,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 40,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 40,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 40,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 40,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 40,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 40,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 40,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 40,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 40,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 40,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 40,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 40,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 40,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "object": "terminal2",
+      "type": "interact"
+    },
+    {
+      "target": [
+        14.0,
+        10.0
+      ],
+      "type": "noise"
+    },
+    {
+      "ticks": 48,
+      "type": "wait"
+    },
+    {
+      "signal": "ПРОХОД_ГОТОВ",
+      "type": "send",
+      "value": true
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 40,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 40,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 40,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "object": "button1",
+      "type": "interact"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 40,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "object": "button1",
+      "type": "interact"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 40,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "object": "button1",
+      "type": "interact"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 40,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "object": "button1",
+      "type": "interact"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 40,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "object": "button1",
+      "type": "interact"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 40,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 40,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 87,
+      "type": "wait"
+    },
+    {
+      "object": "terminal2",
+      "type": "interact"
+    },
+    {
+      "target": [
+        14.0,
+        10.0
+      ],
+      "type": "noise"
+    },
+    {
+      "ticks": 48,
+      "type": "wait"
+    },
+    {
+      "signal": "ПРОХОД_ГОТОВ",
+      "type": "send",
+      "value": true
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 40,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 40,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 40,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 40,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 40,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 40,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 40,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 40,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 40,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 40,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 40,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 40,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 40,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 40,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 40,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 40,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 40,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 40,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 40,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 40,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "object": "terminal2",
+      "type": "interact"
+    },
+    {
+      "target": [
+        14.0,
+        10.0
+      ],
+      "type": "noise"
+    },
+    {
+      "ticks": 48,
+      "type": "wait"
+    },
+    {
+      "signal": "ПРОХОД_ГОТОВ",
+      "type": "send",
+      "value": true
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 40,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 40,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 40,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "object": "button1",
+      "type": "interact"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 40,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "object": "button1",
+      "type": "interact"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 40,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "object": "button1",
+      "type": "interact"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 40,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "object": "button1",
+      "type": "interact"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 40,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "object": "button1",
+      "type": "interact"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 40,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "object": "button1",
+      "type": "interact"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 40,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "object": "button1",
+      "type": "interact"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 40,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 38,
+      "type": "wait"
+    },
+    {
+      "object": "terminal2",
+      "type": "interact"
+    },
+    {
+      "target": [
+        14.0,
+        10.0
+      ],
+      "type": "noise"
+    },
+    {
+      "ticks": 48,
+      "type": "wait"
+    },
+    {
+      "signal": "ПРОХОД_ГОТОВ",
+      "type": "send",
+      "value": true
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 40,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 40,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 40,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 40,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 40,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 40,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 40,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 40,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 40,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 40,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 40,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 40,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 40,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 40,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "type": "backward"
+    },
+    {
+      "type": "left"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    }
+  ],
+  [
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "type": "select"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "ticks": 48,
+      "type": "wait"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "ticks": 130,
+      "type": "wait"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "signal": "ПРОХОД_ГОТОВ",
+      "type": "send",
+      "value": false
+    },
+    {
+      "signal": "ПРОХОД_ЗАПРОС",
+      "type": "send",
+      "value": true
+    },
+    {
+      "ticks": 134,
+      "type": "wait"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "left"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "left"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "right"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "signal": "ПРОХОД_ЗАПРОС",
+      "type": "send",
+      "value": false
+    },
+    {
+      "signal": "У_ДВЕРИ",
+      "type": "send",
+      "value": true
+    },
+    {
+      "signal": "ВЗЛОМ_ГОТОВ",
+      "type": "send",
+      "value": false
+    },
+    {
+      "signal": "ВЗЛОМ_ЗАПРОС",
+      "type": "send",
+      "value": true
+    },
+    {
+      "ticks": 65,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "object": "selected",
+      "type": "interact"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "type": "backward"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "type": "backward"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "signal": "ВЗЛОМ_ЗАПРОС",
+      "type": "send",
+      "value": false
+    },
+    {
+      "signal": "У_ДВЕРИ",
+      "type": "send",
+      "value": false
+    },
+    {
+      "signal": "ПРОХОД_ГОТОВ",
+      "type": "send",
+      "value": false
+    },
+    {
+      "signal": "ПРОХОД_ЗАПРОС",
+      "type": "send",
+      "value": true
+    },
+    {
+      "ticks": 291,
+      "type": "wait"
+    },
+    {
+      "type": "backward"
+    },
+    {
+      "type": "backward"
+    },
+    {
+      "type": "right"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "right"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "right"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "signal": "ПРОХОД_ЗАПРОС",
+      "type": "send",
+      "value": false
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "interact"
+    },
+    {
+      "type": "backward"
+    },
+    {
+      "type": "backward"
+    },
+    {
+      "type": "right"
+    },
+    {
+      "type": "right"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "type": "select"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "ticks": 112,
+      "type": "wait"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "ticks": 130,
+      "type": "wait"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "signal": "ПРОХОД_ГОТОВ",
+      "type": "send",
+      "value": false
+    },
+    {
+      "signal": "ПРОХОД_ЗАПРОС",
+      "type": "send",
+      "value": true
+    },
+    {
+      "ticks": 119,
+      "type": "wait"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "left"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "left"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "right"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "signal": "ПРОХОД_ЗАПРОС",
+      "type": "send",
+      "value": false
+    },
+    {
+      "signal": "У_ДВЕРИ",
+      "type": "send",
+      "value": true
+    },
+    {
+      "signal": "ВЗЛОМ_ГОТОВ",
+      "type": "send",
+      "value": false
+    },
+    {
+      "signal": "ВЗЛОМ_ЗАПРОС",
+      "type": "send",
+      "value": true
+    },
+    {
+      "ticks": 65,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "object": "selected",
+      "type": "interact"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "type": "backward"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "type": "backward"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "type": "backward"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "type": "backward"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "signal": "ВЗЛОМ_ЗАПРОС",
+      "type": "send",
+      "value": false
+    },
+    {
+      "signal": "У_ДВЕРИ",
+      "type": "send",
+      "value": false
+    },
+    {
+      "signal": "ПРОХОД_ГОТОВ",
+      "type": "send",
+      "value": false
+    },
+    {
+      "signal": "ПРОХОД_ЗАПРОС",
+      "type": "send",
+      "value": true
+    },
+    {
+      "ticks": 223,
+      "type": "wait"
+    },
+    {
+      "type": "backward"
+    },
+    {
+      "type": "backward"
+    },
+    {
+      "type": "right"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "right"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "right"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "signal": "ПРОХОД_ЗАПРОС",
+      "type": "send",
+      "value": false
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "interact"
+    },
+    {
+      "type": "backward"
+    },
+    {
+      "type": "backward"
+    },
+    {
+      "type": "right"
+    },
+    {
+      "type": "right"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "type": "select"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "ticks": 56,
+      "type": "wait"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "signal": "ПРОХОД_ГОТОВ",
+      "type": "send",
+      "value": false
+    },
+    {
+      "signal": "ПРОХОД_ЗАПРОС",
+      "type": "send",
+      "value": true
+    },
+    {
+      "ticks": 124,
+      "type": "wait"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "left"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "left"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "right"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "signal": "ПРОХОД_ЗАПРОС",
+      "type": "send",
+      "value": false
+    },
+    {
+      "signal": "У_ДВЕРИ",
+      "type": "send",
+      "value": true
+    },
+    {
+      "signal": "ВЗЛОМ_ГОТОВ",
+      "type": "send",
+      "value": false
+    },
+    {
+      "signal": "ВЗЛОМ_ЗАПРОС",
+      "type": "send",
+      "value": true
+    },
+    {
+      "ticks": 65,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "object": "selected",
+      "type": "interact"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "type": "backward"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "type": "backward"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "type": "backward"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "type": "backward"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "type": "backward"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "type": "backward"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "signal": "ВЗЛОМ_ЗАПРОС",
+      "type": "send",
+      "value": false
+    },
+    {
+      "signal": "У_ДВЕРИ",
+      "type": "send",
+      "value": false
+    },
+    {
+      "signal": "ПРОХОД_ГОТОВ",
+      "type": "send",
+      "value": false
+    },
+    {
+      "signal": "ПРОХОД_ЗАПРОС",
+      "type": "send",
+      "value": true
+    },
+    {
+      "ticks": 155,
+      "type": "wait"
+    },
+    {
+      "type": "backward"
+    },
+    {
+      "type": "backward"
+    },
+    {
+      "type": "right"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "right"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "right"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "signal": "ПРОХОД_ЗАПРОС",
+      "type": "send",
+      "value": false
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "interact"
+    },
+    {
+      "type": "backward"
+    },
+    {
+      "type": "backward"
+    },
+    {
+      "type": "right"
+    },
+    {
+      "type": "right"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "ticks": 1,
+      "type": "wait"
+    },
+    {
+      "type": "backward"
+    },
+    {
+      "type": "backward"
+    }
+  ]
+]

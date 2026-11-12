@@ -1,0 +1,683 @@
+[
+  [
+    {
+      "type": "forward"
+    },
+    {
+      "type": "left"
+    },
+    {
+      "type": "condition",
+      "condition": "camera_safe",
+      "device": "CAM1",
+      "ticks": 41
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "left"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "right"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "right"
+    },
+    {
+      "type": "while",
+      "condition": "items_pending"
+    },
+    {
+      "type": "condition",
+      "condition": "ready_or_done",
+      "signal": "ВЗЛОМ_ЗАПРОС"
+    },
+    {
+      "type": "if",
+      "condition": "signal_on",
+      "signal": "ВЗЛОМ_ЗАПРОС"
+    },
+    {
+      "type": "condition",
+      "condition": "terminal_ready",
+      "device": "terminal1"
+    },
+    {
+      "type": "interact",
+      "object": "terminal1"
+    },
+    {
+      "type": "send",
+      "signal": "ВЗЛОМ_ГОТОВ",
+      "value": true
+    },
+    {
+      "type": "condition",
+      "condition": "signal_off",
+      "signal": "ВЗЛОМ_ЗАПРОС"
+    },
+    {
+      "type": "send",
+      "signal": "ВЗЛОМ_ГОТОВ",
+      "value": false
+    },
+    {
+      "type": "end"
+    },
+    {
+      "type": "end"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "right"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "condition",
+      "condition": "camera_safe",
+      "device": "CAM1",
+      "ticks": 41
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "right"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    }
+  ],
+  [
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "right"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "left"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "condition",
+      "condition": "laser_safe",
+      "device": "LZ_S1",
+      "ticks": 21
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "left"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "while",
+      "condition": "items_pending"
+    },
+    {
+      "type": "if",
+      "condition": "signal_on",
+      "signal": "ПРОХОД_ЗАПРОС"
+    },
+    {
+      "type": "if",
+      "condition": "signal_off",
+      "signal": "ПРОХОД_ГОТОВ"
+    },
+    {
+      "type": "condition",
+      "condition": "guard_posted"
+    },
+    {
+      "type": "condition",
+      "condition": "terminal_ready",
+      "device": "terminal2"
+    },
+    {
+      "type": "interact",
+      "object": "terminal2"
+    },
+    {
+      "type": "noise",
+      "target": [
+        14,
+        10
+      ]
+    },
+    {
+      "type": "condition",
+      "condition": "guard_distracted",
+      "ticks": 250
+    },
+    {
+      "type": "send",
+      "signal": "ПРОХОД_ГОТОВ",
+      "value": true
+    },
+    {
+      "type": "end"
+    },
+    {
+      "type": "end"
+    },
+    {
+      "type": "if",
+      "condition": "signal_on",
+      "signal": "У_ДВЕРИ"
+    },
+    {
+      "type": "interact",
+      "object": "button1"
+    },
+    {
+      "type": "end"
+    },
+    {
+      "type": "timer",
+      "timer": "ОБНОВЛЕНИЕ",
+      "seconds": 2
+    },
+    {
+      "type": "condition",
+      "condition": "timer_done",
+      "timer": "ОБНОВЛЕНИЕ"
+    },
+    {
+      "type": "end"
+    },
+    {
+      "type": "backward"
+    },
+    {
+      "type": "left"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "condition",
+      "condition": "laser_safe",
+      "device": "LZ_S1",
+      "ticks": 21
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    }
+  ],
+  [
+    {
+      "type": "while",
+      "condition": "items_free"
+    },
+    {
+      "type": "select"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "condition",
+      "condition": "laser_safe",
+      "device": "LZ_S1",
+      "ticks": 21
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "condition",
+      "condition": "laser_safe",
+      "device": "LZ_S2",
+      "ticks": 21
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "send",
+      "signal": "ПРОХОД_ГОТОВ",
+      "value": false
+    },
+    {
+      "type": "send",
+      "signal": "ПРОХОД_ЗАПРОС",
+      "value": true
+    },
+    {
+      "type": "wait_signal",
+      "signal": "ПРОХОД_ГОТОВ",
+      "value": true
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "left"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "left"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "right"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "send",
+      "signal": "ПРОХОД_ЗАПРОС",
+      "value": false
+    },
+    {
+      "type": "send",
+      "signal": "У_ДВЕРИ",
+      "value": true
+    },
+    {
+      "type": "send",
+      "signal": "ВЗЛОМ_ГОТОВ",
+      "value": false
+    },
+    {
+      "type": "send",
+      "signal": "ВЗЛОМ_ЗАПРОС",
+      "value": true
+    },
+    {
+      "type": "wait_signal",
+      "signal": "ВЗЛОМ_ГОТОВ",
+      "value": true
+    },
+    {
+      "type": "condition",
+      "condition": "door_open",
+      "device": "door1"
+    },
+    {
+      "type": "while",
+      "condition": "selected_near",
+      "negate": true
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "end"
+    },
+    {
+      "type": "interact",
+      "object": "selected"
+    },
+    {
+      "type": "while",
+      "condition": "at_marker",
+      "device": "staging",
+      "negate": true
+    },
+    {
+      "type": "backward"
+    },
+    {
+      "type": "end"
+    },
+    {
+      "type": "send",
+      "signal": "ВЗЛОМ_ЗАПРОС",
+      "value": false
+    },
+    {
+      "type": "send",
+      "signal": "У_ДВЕРИ",
+      "value": false
+    },
+    {
+      "type": "send",
+      "signal": "ПРОХОД_ГОТОВ",
+      "value": false
+    },
+    {
+      "type": "send",
+      "signal": "ПРОХОД_ЗАПРОС",
+      "value": true
+    },
+    {
+      "type": "wait_signal",
+      "signal": "ПРОХОД_ГОТОВ",
+      "value": true
+    },
+    {
+      "type": "backward"
+    },
+    {
+      "type": "backward"
+    },
+    {
+      "type": "right"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "right"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "right"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "send",
+      "signal": "ПРОХОД_ЗАПРОС",
+      "value": false
+    },
+    {
+      "type": "condition",
+      "condition": "laser_safe",
+      "device": "LZ_S2",
+      "ticks": 41
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "condition",
+      "condition": "laser_safe",
+      "device": "LZ_S1",
+      "ticks": 41
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "interact"
+    },
+    {
+      "type": "backward"
+    },
+    {
+      "type": "backward"
+    },
+    {
+      "type": "right"
+    },
+    {
+      "type": "right"
+    },
+    {
+      "type": "end"
+    },
+    {
+      "type": "backward"
+    },
+    {
+      "type": "backward"
+    }
+  ]
+]

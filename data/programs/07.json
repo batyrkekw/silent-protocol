@@ -1,0 +1,571 @@
+[
+  [
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "right"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "left"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "right"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "wait_signal",
+      "signal": "ПЛИТА_ДЕРЖИТСЯ"
+    },
+    {
+      "type": "wait_signal",
+      "signal": "НОСИТЕЛЬ_ГОТОВ"
+    },
+    {
+      "type": "interact",
+      "object": "terminal1"
+    },
+    {
+      "type": "right"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "right"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "left"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    }
+  ],
+  [
+    {
+      "type": "forward"
+    },
+    {
+      "type": "left"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "right"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "condition",
+      "condition": "laser_safe",
+      "device": "LZ2",
+      "ticks": 21
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "left"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "right"
+    },
+    {
+      "type": "condition",
+      "condition": "laser_safe",
+      "device": "LZ1",
+      "ticks": 21
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "left"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "send",
+      "signal": "ПЛИТА_ДЕРЖИТСЯ",
+      "value": true
+    },
+    {
+      "type": "wait_signal",
+      "signal": "ДОБЫЧА_ВЫНЕСЕНА"
+    },
+    {
+      "type": "backward"
+    },
+    {
+      "type": "backward"
+    },
+    {
+      "type": "left"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "condition",
+      "condition": "laser_safe",
+      "device": "LZ1",
+      "ticks": 21
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "left"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "right"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "condition",
+      "condition": "laser_safe",
+      "device": "LZ2",
+      "ticks": 21
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "left"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "right"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    }
+  ],
+  [
+    {
+      "type": "forward"
+    },
+    {
+      "type": "left"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "right"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "condition",
+      "condition": "laser_safe",
+      "device": "LZ2",
+      "ticks": 21
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "left"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "right"
+    },
+    {
+      "type": "condition",
+      "condition": "laser_safe",
+      "device": "LZ1",
+      "ticks": 21
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "wait_signal",
+      "signal": "ПЛИТА_ДЕРЖИТСЯ"
+    },
+    {
+      "type": "send",
+      "signal": "НОСИТЕЛЬ_ГОТОВ",
+      "value": true
+    },
+    {
+      "type": "condition",
+      "condition": "laser_safe",
+      "device": "VAULT"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "interact",
+      "object": "item1"
+    },
+    {
+      "type": "backward"
+    },
+    {
+      "type": "backward"
+    },
+    {
+      "type": "backward"
+    },
+    {
+      "type": "send",
+      "signal": "ДОБЫЧА_ВЫНЕСЕНА",
+      "value": true
+    },
+    {
+      "type": "backward"
+    },
+    {
+      "type": "backward"
+    },
+    {
+      "type": "backward"
+    },
+    {
+      "type": "condition",
+      "condition": "laser_safe",
+      "device": "LZ1",
+      "ticks": 41
+    },
+    {
+      "type": "backward"
+    },
+    {
+      "type": "backward"
+    },
+    {
+      "type": "right"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "right"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "condition",
+      "condition": "laser_safe",
+      "device": "LZ2",
+      "ticks": 41
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "left"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "right"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "interact"
+    }
+  ]
+]

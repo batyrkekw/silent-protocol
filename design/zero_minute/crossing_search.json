@@ -1,0 +1,30 @@
+[
+  {
+    "examples": [
+      {
+        "departure": 160,
+        "finish": 395,
+        "niche_wait": 40
+      },
+      {
+        "departure": 160,
+        "finish": 415,
+        "niche_wait": 60
+      },
+      {
+        "departure": 160,
+        "finish": 435,
+        "niche_wait": 80
+      }
+    ],
+    "loaded": false,
+    "successes": 252,
+    "trials": 3721
+  },
+  {
+    "examples": [],
+    "loaded": true,
+    "successes": 0,
+    "trials": 3721
+  }
+]

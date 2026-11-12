@@ -1,0 +1,163 @@
+[
+  [
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "send",
+      "signal": "ЛЕВАЯ_ПЛИТА",
+      "value": true
+    },
+    {
+      "type": "wait_signal",
+      "signal": "ПРАВАЯ_ПЛИТА",
+      "value": true
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "right"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "left"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "left"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "send",
+      "signal": "ЛЕВЫЙ_ВЫШЕЛ",
+      "value": true
+    }
+  ],
+  [
+    {
+      "type": "wait_signal",
+      "signal": "ЛЕВАЯ_ПЛИТА",
+      "value": true
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "right"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "send",
+      "signal": "ПРАВАЯ_ПЛИТА",
+      "value": true
+    },
+    {
+      "type": "wait_signal",
+      "signal": "ЛЕВЫЙ_ВЫШЕЛ",
+      "value": true
+    },
+    {
+      "type": "left"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "left"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    }
+  ],
+  [
+    {
+      "type": "wait_signal",
+      "signal": "ПРАВАЯ_ПЛИТА",
+      "value": true
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "left"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "right"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "left"
+    },
+    {
+      "type": "forward"
+    }
+  ]
+]

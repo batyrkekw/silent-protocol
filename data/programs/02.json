@@ -1,0 +1,55 @@
+[
+  [
+    {
+      "type": "forward"
+    },
+    {
+      "type": "right"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "interact",
+      "object": "terminal1"
+    },
+    {
+      "type": "condition",
+      "condition": "laser_safe",
+      "device": "L",
+      "ticks": 50
+    },
+    {
+      "type": "left"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "left"
+    },
+    {
+      "type": "forward"
+    }
+  ],
+  [],
+  []
+]

@@ -1,0 +1,295 @@
+{
+  "exposure": [
+    {
+      "entry": 620,
+      "exit": 682,
+      "laser_deadline": 856,
+      "margin": 174,
+      "robot": 2,
+      "ticks": 62,
+      "zone": "gallery"
+    },
+    {
+      "entry": 1820,
+      "exit": 2016,
+      "laser_deadline": 2056,
+      "margin": 40,
+      "robot": 2,
+      "ticks": 196,
+      "zone": "gallery"
+    },
+    {
+      "entry": 3346,
+      "exit": 3446,
+      "laser_deadline": 3483,
+      "margin": 37,
+      "robot": 2,
+      "ticks": 100,
+      "zone": "vault"
+    }
+  ],
+  "failed": 0,
+  "fixed": [
+    {
+      "reason": "Все экспонаты доставлены. Команда эвакуирована.",
+      "result": "won",
+      "scenario": 1,
+      "ticks": 4179
+    },
+    {
+      "reason": "МОНА: CAM1 обнаружил робота в 6.55 с, блок 11",
+      "result": "lost",
+      "scenario": 2,
+      "ticks": 131
+    },
+    {
+      "reason": "ЛИЗА: лазер LZ_M, тик 438; скорость 10 тиков/клетку",
+      "result": "lost",
+      "scenario": 3,
+      "ticks": 438
+    },
+    {
+      "reason": "МОНА: CAM1 обнаружил робота в 5.05 с, блок 8",
+      "result": "lost",
+      "scenario": 4,
+      "ticks": 101
+    }
+  ],
+  "milestones": [
+    {
+      "kind": "noise",
+      "message": "Охранник услышал шум в (14, 13)",
+      "robot": 0,
+      "tick": 321
+    },
+    {
+      "kind": "hack",
+      "message": "Защита отключена до тика 856",
+      "robot": 0,
+      "tick": 596
+    },
+    {
+      "kind": "door",
+      "message": "Кнопка открыла дверь",
+      "robot": 1,
+      "tick": 599
+    },
+    {
+      "kind": "take",
+      "message": "ЛИЗА взял Золотой слиток",
+      "robot": 2,
+      "tick": 661
+    },
+    {
+      "kind": "door",
+      "message": "Кнопка открыла дверь",
+      "robot": 1,
+      "tick": 717
+    },
+    {
+      "kind": "noise",
+      "message": "Охранник услышал шум в (14, 13)",
+      "robot": 0,
+      "tick": 822
+    },
+    {
+      "kind": "door",
+      "message": "Дверь галереи закрылась: истекли 120 тиков. Продлите окно кнопкой.",
+      "robot": -1,
+      "tick": 837
+    },
+    {
+      "kind": "deposit",
+      "message": "ЛИЗА доставил Золотой слиток",
+      "robot": 2,
+      "tick": 1280
+    },
+    {
+      "kind": "noise",
+      "message": "Охранник услышал шум в (14, 13)",
+      "robot": 0,
+      "tick": 1521
+    },
+    {
+      "kind": "hack",
+      "message": "Защита отключена до тика 2056",
+      "robot": 0,
+      "tick": 1796
+    },
+    {
+      "kind": "door",
+      "message": "Кнопка открыла дверь",
+      "robot": 1,
+      "tick": 1799
+    },
+    {
+      "kind": "take",
+      "message": "ЛИЗА взял Золотой банан",
+      "robot": 2,
+      "tick": 1909
+    },
+    {
+      "kind": "door",
+      "message": "Кнопка открыла дверь",
+      "robot": 1,
+      "tick": 1917
+    },
+    {
+      "kind": "door",
+      "message": "Дверь галереи закрылась: истекли 120 тиков. Продлите окно кнопкой.",
+      "robot": -1,
+      "tick": 2037
+    },
+    {
+      "kind": "noise",
+      "message": "Охранник услышал шум в (14, 13)",
+      "robot": 0,
+      "tick": 2262
+    },
+    {
+      "kind": "deposit",
+      "message": "ЛИЗА доставил Золотой банан",
+      "robot": 2,
+      "tick": 2720
+    },
+    {
+      "kind": "noise",
+      "message": "Охранник услышал шум в (14, 13)",
+      "robot": 0,
+      "tick": 2961
+    },
+    {
+      "kind": "hack",
+      "message": "Защита отключена до тика 3483",
+      "robot": 0,
+      "tick": 3323
+    },
+    {
+      "kind": "take",
+      "message": "ЛИЗА взял Алмаз",
+      "robot": 2,
+      "tick": 3396
+    },
+    {
+      "kind": "noise",
+      "message": "Охранник услышал шум в (14, 13)",
+      "robot": 0,
+      "tick": 3702
+    },
+    {
+      "kind": "deposit",
+      "message": "ЛИЗА доставил Алмаз",
+      "robot": 2,
+      "tick": 4160
+    },
+    {
+      "kind": "won",
+      "message": "Все экспонаты доставлены. Команда эвакуирована.",
+      "robot": -1,
+      "tick": 4179
+    }
+  ],
+  "noise_windows": [
+    {
+      "duration": 256,
+      "entry": 344,
+      "return": 600
+    },
+    {
+      "duration": 256,
+      "entry": 833,
+      "return": 1089
+    },
+    {
+      "duration": 256,
+      "entry": 1544,
+      "return": 1800
+    },
+    {
+      "duration": 256,
+      "entry": 2297,
+      "return": 2553
+    },
+    {
+      "duration": 256,
+      "entry": 2996,
+      "return": 3252
+    },
+    {
+      "duration": 256,
+      "entry": 3725,
+      "return": 3981
+    }
+  ],
+  "pairs": [
+    {
+      "TS_to_button_min_ticks": 140,
+      "TS_to_door_min_ticks": 300,
+      "TV_to_door_min_ticks": 270,
+      "TV_to_plate_min_ticks": 240,
+      "authorization_ticks": 60,
+      "button_to_door_min_ticks": 160,
+      "door_ticks": 120,
+      "gallery_window": 260,
+      "robots": [
+        0,
+        1
+      ],
+      "vault_window": 160
+    },
+    {
+      "TS_to_button_min_ticks": 140,
+      "TS_to_door_min_ticks": 300,
+      "TV_to_door_min_ticks": 270,
+      "TV_to_plate_min_ticks": 240,
+      "authorization_ticks": 60,
+      "button_to_door_min_ticks": 160,
+      "door_ticks": 120,
+      "gallery_window": 260,
+      "robots": [
+        0,
+        2
+      ],
+      "vault_window": 160
+    },
+    {
+      "TS_to_button_min_ticks": 140,
+      "TS_to_door_min_ticks": 300,
+      "TV_to_door_min_ticks": 270,
+      "TV_to_plate_min_ticks": 240,
+      "authorization_ticks": 60,
+      "button_to_door_min_ticks": 160,
+      "door_ticks": 120,
+      "gallery_window": 260,
+      "robots": [
+        1,
+        2
+      ],
+      "vault_window": 160
+    }
+  ],
+  "passed": 40,
+  "scenarios": [
+    {
+      "result": "won",
+      "scenario": 1,
+      "ticks": 4179
+    },
+    {
+      "result": "won",
+      "scenario": 2,
+      "ticks": 4299
+    },
+    {
+      "result": "won",
+      "scenario": 3,
+      "ticks": 4119
+    },
+    {
+      "result": "won",
+      "scenario": 4,
+      "ticks": 4239
+    }
+  ],
+  "solo_trials": 366
+}

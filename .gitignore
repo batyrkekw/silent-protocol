@@ -1,0 +1,25 @@
+# Local Godot/editor files and bundled tools
+.godot/
+.tools/
+.DS_Store
+build/
+builds/
+__pycache__/
+*.tmp
+*.log
+
+# Credentials and local configuration
+.env
+.env.*
+!.env.example
+export_credentials.cfg
+
+# Distribute binaries through GitHub Releases
+*.exe
+*.app/
+*.pck
+*.zip
+
+# Original pasted task messages are not project source
+/design/zero_minute/request.txt
+/design/zero_minute/request_revised.txt

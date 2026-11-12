@@ -1,0 +1,123 @@
+[
+  [
+    {
+      "type": "timer",
+      "timer": "СТАРТ",
+      "seconds": 0.5
+    },
+    {
+      "type": "condition",
+      "condition": "timer_done",
+      "timer": "СТАРТ"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "if",
+      "condition": "camera_safe",
+      "ticks": 50
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "else"
+    },
+    {
+      "type": "backward"
+    },
+    {
+      "type": "backward"
+    },
+    {
+      "type": "backward"
+    },
+    {
+      "type": "right"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "left"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "condition",
+      "condition": "laser_safe",
+      "device": "L",
+      "ticks": 21
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "left"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "forward"
+    },
+    {
+      "type": "end"
+    }
+  ],
+  [],
+  []
+]

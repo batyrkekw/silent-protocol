@@ -1,0 +1,88 @@
+{
+  "id": 4,
+  "name": "Если… иначе",
+  "grid": [
+    "#############",
+    "#1.........E#",
+    "#.#########.#",
+    "#...L.......#",
+    "#############"
+  ],
+  "objects": [
+    {
+      "id": "exit1",
+      "type": "exit",
+      "pos": [
+        11,
+        1
+      ]
+    }
+  ],
+  "robots": [
+    {
+      "id": 0,
+      "pos": [
+        1,
+        1
+      ]
+    }
+  ],
+  "guards": [],
+  "cameras": [
+    {
+      "id": "CAM1",
+      "pos": [
+        6,
+        0
+      ],
+      "facing": [
+        0,
+        1
+      ],
+      "cells": [
+        [
+          5,
+          1
+        ],
+        [
+          6,
+          1
+        ],
+        [
+          7,
+          1
+        ]
+      ],
+      "period": 200,
+      "active": 120,
+      "phase": 0
+    }
+  ],
+  "lasers": [
+    {
+      "id": "L",
+      "cells": [
+        [
+          4,
+          3
+        ]
+      ],
+      "period": 200,
+      "off_start": 100,
+      "off_length": 100,
+      "phase": 0
+    }
+  ],
+  "scenarios": [],
+  "win": {
+    "all_items_delivered": true,
+    "all_active_robots_at_exit": true
+  },
+  "noise": {
+    "range": 5,
+    "hearing": 8,
+    "inspect": 120,
+    "cooldown": 200
+  },
+  "hint": "Проверьте камеру и выберите безопасный путь."
+}

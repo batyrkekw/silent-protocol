@@ -1,0 +1,270 @@
+{
+  "conflicts": [],
+  "distances": [
+    {
+      "actual": 17,
+      "expected": 17,
+      "from": "(8, 12)",
+      "to": "(20, 7)"
+    },
+    {
+      "actual": 29,
+      "expected": 29,
+      "from": "(3, 2)",
+      "to": "(20, 8)"
+    },
+    {
+      "actual": 15,
+      "expected": 15,
+      "from": "(3, 2)",
+      "to": "(8, 12)"
+    },
+    {
+      "actual": 26,
+      "expected": 26,
+      "from": "(4, 16)",
+      "to": "(24, 12)"
+    },
+    {
+      "actual": 24,
+      "expected": 24,
+      "from": "(4, 16)",
+      "to": "(22, 12)"
+    },
+    {
+      "actual": 11,
+      "expected": 11,
+      "from": "(4, 8)",
+      "to": "(14, 9)"
+    },
+    {
+      "actual": 18,
+      "expected": 18,
+      "from": "(3, 2)",
+      "to": "(14, 9)"
+    },
+    {
+      "actual": 17,
+      "expected": 17,
+      "from": "(4, 16)",
+      "to": "(14, 9)"
+    }
+  ],
+  "map": {
+    "height": 18,
+    "rows_valid": true,
+    "width": 28
+  },
+  "visibility": [
+    {
+      "expected": false,
+      "from": "(12, 11)",
+      "radius": 3,
+      "target": "(14, 9)",
+      "visible": false
+    },
+    {
+      "expected": false,
+      "from": "(12, 11)",
+      "radius": 3,
+      "target": "(14, 9)",
+      "visible": false
+    },
+    {
+      "expected": false,
+      "from": "(13, 11)",
+      "radius": 3,
+      "target": "(14, 9)",
+      "visible": false
+    },
+    {
+      "expected": false,
+      "from": "(13, 11)",
+      "radius": 3,
+      "target": "(14, 9)",
+      "visible": false
+    },
+    {
+      "expected": false,
+      "from": "(14, 11)",
+      "radius": 3,
+      "target": "(14, 9)",
+      "visible": false
+    },
+    {
+      "expected": false,
+      "from": "(14, 11)",
+      "radius": 3,
+      "target": "(14, 9)",
+      "visible": false
+    },
+    {
+      "expected": false,
+      "from": "(15, 11)",
+      "radius": 3,
+      "target": "(14, 9)",
+      "visible": false
+    },
+    {
+      "expected": false,
+      "from": "(15, 11)",
+      "radius": 3,
+      "target": "(14, 9)",
+      "visible": false
+    },
+    {
+      "expected": false,
+      "from": "(16, 11)",
+      "radius": 3,
+      "target": "(14, 9)",
+      "visible": false
+    },
+    {
+      "expected": false,
+      "from": "(16, 11)",
+      "radius": 3,
+      "target": "(14, 9)",
+      "visible": false
+    },
+    {
+      "expected": false,
+      "from": "(12, 11)",
+      "radius": 4,
+      "target": "(14, 9)",
+      "visible": false
+    },
+    {
+      "expected": false,
+      "from": "(12, 11)",
+      "radius": 4,
+      "target": "(14, 9)",
+      "visible": false
+    },
+    {
+      "expected": false,
+      "from": "(13, 11)",
+      "radius": 4,
+      "target": "(14, 9)",
+      "visible": false
+    },
+    {
+      "expected": false,
+      "from": "(13, 11)",
+      "radius": 4,
+      "target": "(14, 9)",
+      "visible": false
+    },
+    {
+      "expected": false,
+      "from": "(14, 11)",
+      "radius": 4,
+      "target": "(14, 9)",
+      "visible": false
+    },
+    {
+      "expected": false,
+      "from": "(14, 11)",
+      "radius": 4,
+      "target": "(14, 9)",
+      "visible": false
+    },
+    {
+      "expected": false,
+      "from": "(15, 11)",
+      "radius": 4,
+      "target": "(14, 9)",
+      "visible": false
+    },
+    {
+      "expected": false,
+      "from": "(15, 11)",
+      "radius": 4,
+      "target": "(14, 9)",
+      "visible": false
+    },
+    {
+      "expected": false,
+      "from": "(16, 11)",
+      "radius": 4,
+      "target": "(14, 9)",
+      "visible": false
+    },
+    {
+      "expected": false,
+      "from": "(16, 11)",
+      "radius": 4,
+      "target": "(14, 9)",
+      "visible": false
+    },
+    {
+      "expected": false,
+      "from": "(12, 11)",
+      "radius": 5,
+      "target": "(14, 9)",
+      "visible": false
+    },
+    {
+      "expected": false,
+      "from": "(12, 11)",
+      "radius": 5,
+      "target": "(14, 9)",
+      "visible": false
+    },
+    {
+      "expected": false,
+      "from": "(13, 11)",
+      "radius": 5,
+      "target": "(14, 9)",
+      "visible": false
+    },
+    {
+      "expected": false,
+      "from": "(13, 11)",
+      "radius": 5,
+      "target": "(14, 9)",
+      "visible": false
+    },
+    {
+      "expected": false,
+      "from": "(14, 11)",
+      "radius": 5,
+      "target": "(14, 9)",
+      "visible": false
+    },
+    {
+      "expected": false,
+      "from": "(14, 11)",
+      "radius": 5,
+      "target": "(14, 9)",
+      "visible": false
+    },
+    {
+      "expected": false,
+      "from": "(15, 11)",
+      "radius": 5,
+      "target": "(14, 9)",
+      "visible": false
+    },
+    {
+      "expected": false,
+      "from": "(15, 11)",
+      "radius": 5,
+      "target": "(14, 9)",
+      "visible": false
+    },
+    {
+      "expected": false,
+      "from": "(16, 11)",
+      "radius": 5,
+      "target": "(14, 9)",
+      "visible": false
+    },
+    {
+      "expected": false,
+      "from": "(16, 11)",
+      "radius": 5,
+      "target": "(14, 9)",
+      "visible": false
+    }
+  ]
+}

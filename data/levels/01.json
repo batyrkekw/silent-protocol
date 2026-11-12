@@ -1,0 +1,63 @@
+{
+  "id": 0,
+  "name": "Первый шаг",
+  "grid": [
+    "#######",
+    "#1.BDE#",
+    "#.....#",
+    "#######"
+  ],
+  "objects": [
+    {
+      "id": "exit1",
+      "type": "exit",
+      "pos": [
+        5,
+        1
+      ]
+    },
+    {
+      "id": "door1",
+      "type": "door",
+      "pos": [
+        4,
+        1
+      ],
+      "mode": "permanent",
+      "duration": 120
+    },
+    {
+      "id": "button1",
+      "type": "button",
+      "pos": [
+        3,
+        1
+      ],
+      "door": "door1"
+    }
+  ],
+  "robots": [
+    {
+      "id": 0,
+      "pos": [
+        1,
+        1
+      ]
+    }
+  ],
+  "guards": [],
+  "cameras": [],
+  "lasers": [],
+  "scenarios": [],
+  "win": {
+    "all_items_delivered": true,
+    "all_active_robots_at_exit": true
+  },
+  "noise": {
+    "range": 5,
+    "hearing": 8,
+    "inspect": 120,
+    "cooldown": 200
+  },
+  "hint": "Откройте дверь кнопкой и выведите Лувра в светящуюся арку. Программа управляет им сама."
+}

@@ -1,0 +1,93 @@
+extends SceneTree
+const Main=preload('res://scripts/main.gd')
+const Sim=preload('res://scripts/simulation_v5.gd')
+const Records=preload('res://scripts/run_records.gd')
+const Runner=preload('res://scripts/robustness_runner.gd')
+const PATH='user://qa_improvement_records.json'
+var passed=0
+var failures=0
+func check(ok:bool,label:String):
+ if ok:passed+=1;print('PASS ',label)
+ else:failures+=1;push_error(label)
+func _initialize():call_deferred('test')
+func solve(sim,plan):
+ sim.record=false;sim.reset(plan);sim.start()
+ while sim.outcome=='running' and sim.tick<12000:sim.step()
+func test():
+ DirAccess.remove_absolute(ProjectSettings.globalize_path(PATH))
+ var store=Records.new(PATH)
+ var sim=Sim.new()
+ var compact=sim.solution()
+ solve(sim,compact)
+ check(sim.outcome=='won' and sim.tick<100,'First lesson has a short, complete autonomous route')
+ var first=store.finish(sim,compact)
+ check(first.new_time and first.new_size and first.blocks==4,'Initial victory creates time and four-command records')
+ var dense=[[{'type':'forward'},{'type':'interact','object':'button1'},{'type':'forward'},{'type':'forward'},{'type':'forward'}],[],[]]
+ solve(sim,dense)
+ var next=store.finish(sim,dense)
+ check(next.new_time and not next.new_size and next.blocks==5,'Unrolling the loop improves time while costing more commands')
+ var restored=Records.new(PATH)
+ check(restored.best(sim).ticks==sim.tick and restored.best(sim).blocks==4,'Independent best time and size survive app restart')
+ var before=restored.entries.duplicate(true)
+ sim.tick=1
+ restored.finish(sim,compact,false)
+ check(restored.entries==before,'Reference demonstrations do not overwrite player records')
+ sim.outcome='lost';restored.finish(sim,compact)
+ check(restored.entries==before,'Failed runs do not create records')
+ var sig=Records.signature(compact)
+ var normalized=JSON.parse_string(JSON.stringify(compact))
+ check(Records.signature(normalized)==sig,'JSON save/load does not change the plan identity')
+ var f=FileAccess.open(PATH,FileAccess.WRITE);f.store_string('{broken');f.close()
+ check(Records.new(PATH).entries.is_empty(),'Broken record files are ignored safely')
+ root.size=Vector2i(1440,900)
+ var game=Main.new();game.show_intro_on_boot=false;game.records_path=PATH
+ game.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT);root.add_child(game);game._close_tutorial()
+ await process_frame;await process_frame
+ game.coach.start()
+ check(game.coach.step_index==0 and game.coach.highlight==game.block_editor.tiles[0],'Coach highlights the first real toolbox command')
+ for kind in ['forward','interact','repeat','forward']:
+  game.block_editor.add_from_palette(kind);game.coach.update(0)
+ check(game.coach.step_index==4 and game.plan[0][3].type=='forward' and game.plan[0][4].type=='end','Guided input inserts the forward step inside the repeat')
+ game._start()
+ while game.sim.outcome=='running':game.sim.step()
+ game.board.state=game.sim.view();game._update_ui();game.coach.update(0)
+ check(game.sim.outcome=='won' and game.result_summary.visible and game.run_result.new_time,'Real tutorial input wins and displays a personal record')
+ check(not game.coach.active,'The guided coach dismisses on success')
+ await process_frame;await process_frame
+ check(game.log_box.get_global_rect().end.y<=game.chronicle.get_global_rect().end.y and game.toast.get_global_rect().end.y<=900,'Results, log and next lesson fit the screen')
+ var snapshot=game.plan.duplicate(true)
+ game.improve_button.pressed.emit()
+ check(game.plan==snapshot and game.sim.outcome=='planning' and game.editor_panel.visible,'Improve preserves the program and returns to editing')
+ game._change_level(2);game._run_reference()
+ while game.sim.outcome=='running':game.sim.step()
+ game.board.state=game.sim.view();game._update_ui()
+ check(game.run_is_demo and not game.run_result.eligible,'Show solution is visibly marked as a demonstration')
+ var saved_tick=game.sim.tick;var saved_plan=game.plan.duplicate(true)
+ game._check_robustness()
+ check(game.reliability.active and game.board.sim==game.reliability.probe and not game.scrubber.editable,'Reliability test displays an independent live simulation')
+ game._tick_reliability(.25)
+ check(game.board.state.tick>0 and game.phase_label.text.contains('1/3') and game.sim.tick==saved_tick,'Scenario progresses on the map without altering the original result')
+ game.reliability.paused=true;var t=game.reliability.probe.tick;game._tick_reliability(.25)
+ check(game.reliability.probe.tick==t,'Visual check can be paused')
+ game._stop_reliability(false)
+ check(game.board.sim==game.sim and game.sim.tick==saved_tick and game.plan==saved_plan and not game.reliability_actions.visible,'Cancel restores the original world and program')
+ game._check_robustness();game.reliability.speed=1000
+ while game.reliability.active:game._tick_reliability(.25)
+ check(game.reliability_finished and game.reliability.successes()==3,'Same reference plan completes all three visible scenarios')
+ check(game.plan==saved_plan and game.sim.tick==saved_tick,'All scenarios leave the original plan and result untouched')
+ await process_frame;await process_frame
+ check(game.log_box.get_global_rect().end.y<=game.chronicle.get_global_rect().end.y,'Three-scenario summary fits alongside the log')
+ var runner=Runner.new()
+ var fixed=JSON.parse_string(FileAccess.get_file_as_string('res://data/programs/08-fixed.json'))
+ runner.start(game.sim,fixed);runner.speed=1000
+ while runner.active:runner.step(.25)
+ check(runner.successes()<3 and runner.results.size()==3,'Fragile fixed delays visibly fail shifted protection phases')
+ store=Records.new(PATH)
+ solve(sim,compact);store.finish(sim,compact);store.reliability(sim,compact,3)
+ check(store.best(sim).reliable_signature==Records.signature(compact),'Reliability is attached to the exact tested plan')
+ game._improve_program()
+ check(not game.reliability_finished,'Changing the plan clears the old robustness display')
+ game.queue_free();await process_frame;await process_frame
+ DirAccess.remove_absolute(ProjectSettings.globalize_path(PATH))
+ print('IMPROVEMENT RESULT ',passed,' passed; ',failures,' failed')
+ quit(1 if failures else 0)
