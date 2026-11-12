@@ -26,6 +26,8 @@ var tile=Vector2.ONE
 var font:Font=preload('res://assets/fonts/jetbrains-mono.ttf')
 var label_font:Font=preload('res://assets/fonts/jetbrains-mono-bold.ttf')
 var badge_style:StyleBoxFlat
+var badge_rects:Dictionary={}
+var badge_key=''
 var clock=0.0
 var drawing_item=0
 func _ready():
@@ -49,6 +51,8 @@ func _gui_input(event:InputEvent):
    for o in state.objects:
     if o.pos==hover:
      tooltip_text=o.get('name',o.id)
+     if o.type=='button':tooltip_text='Кнопка: взаимодействуйте, чтобы открыть дверь'
+     if o.type=='plate':tooltip_text='Плита: стойте на ней, чтобы удерживать дверь открытой'
      if o.type=='terminal':tooltip_text='%s · взлом %.1f с · окно %.1f с'%( [o.id,o.hack/20.0,o.window/20.0] )
    for target in sim.data.get('noise_targets',[]):
     if Sim.to_cell(target)==hover:tooltip_text='Шумовая ниша · бросьте шум через окно из пультовой'
@@ -64,6 +68,7 @@ func _draw():
  if not sim or state.is_empty():return
  cell_size=minf((size.x-40)/sim.width,(size.y-60)/sim.height)
  tile=Vector2.ONE*cell_size;origin=(size-Vector2(0,26)-Vector2(sim.width,sim.height)*tile)/2
+ _layout_badges()
  museum.architecture(self)
  for y in sim.height:
   for x in sim.width:
@@ -93,13 +98,8 @@ func _draw():
    'door':
     draw_rect(Rect2(p-tile*Vector2(.43,.28),tile*Vector2(.86,.56)),Color('6ac6b5') if o.open else Color('41576e'))
     _text(p+Vector2(-4,4),'D',Color.WHITE,12)
-   'plate':
-    var occupied=state.robots.any(func(r):return r.pos==o.pos)
-    draw_rect(Rect2(p-tile*.33,tile*.66),Color('69bdac') if occupied else Color('9182ad'),false,3)
-    _text(p+Vector2(-4,4),'P',Color('476b6b'),12)
-   'button':
-    draw_rect(Rect2(p-Vector2(10,9),Vector2(20,18)),Color('334d63'))
-    draw_circle(p,5,Color('e7b66b'));_text(p+Vector2(-4,-14),'B',Color('49667a'),12)
+   'plate':_draw_plate(o,p)
+   'button':_draw_button(o,p)
    'marker':
     draw_rect(Rect2(p-tile*.30,tile*.60),Color('8ba6b9'),false,1)
     _text(p+Vector2(-5,5),'◇',Color('59778b'),14)
@@ -109,7 +109,7 @@ func _draw():
     draw_rect(Rect2(p-Vector2(12,10),Vector2(24,20)),Color('8ea4af'),false,1)
     var color=Color('66d4ba') if state.tick>=o.ready else Color('bd9c67')
     draw_rect(Rect2(p-Vector2(8,7),Vector2(16,11)),color)
-    _device_badge(p+Vector2(0,-26),o.id if o.id.begins_with('T_') else 'T'+o.id[-1],Color('83e2da'))
+    _device_badge(p,o.id if o.id.begins_with('T_') else 'T'+o.id[-1],Color('83e2da'))
    'item':
     if not o.delivered and o.carrier<0:
      drawing_item={'E1':1,'E2':2,'A':0}.get(o.id,0) if sim.level==3 else (int(o.id[-1])-1 if sim.level>=2 else (1 if sim.level==1 else 0))
@@ -181,13 +181,86 @@ func _draw():
  Art.render(self,hud+Vector2(0,36),0,.65)
  var escaped=sim.active_ids.filter(func(i):return state.robots[i].pos in sim.exits()).size()
  _text(hud+Vector2(20,41),'%d/%d'%[escaped,sim.active_ids.size()],Color('e5edfa'),18)
-func _device_badge(center:Vector2,title:String,accent:Color)->void:
- var width=label_font.get_string_size(title,HORIZONTAL_ALIGNMENT_LEFT,-1,14).x+18
- var at=Vector2(clampf(center.x-width*.5,5,size.x-width-5),clampf(center.y-10,3,size.y-25))
- var box=Rect2(at,Vector2(width,21))
+func _layout_badges()->void:
+ var key=str(size)+':'+str(sim.level)+':'+str(sim.stage)
+ if key==badge_key:return
+ badge_key=key;badge_rects.clear()
+ var floor_rects=[];var icons=[];var devices=[]
+ for y in sim.height:
+  for x in sim.width:
+   if not sim.walls.has(Vector2i(x,y)):floor_rects.append(Rect2(origin+Vector2(x,y)*tile,tile).grow(4))
+ for o in state.objects:
+  if o.type=='terminal':devices.append({'title':o.id if o.id.begins_with('T_') else 'T'+o.id[-1],'pos':point(o.pos)})
+ for c in state.cameras:
+  var mount=c.pos
+  if not sim.walls.has(mount) and sim.walls.has(mount-c.facing):mount-=c.facing
+  devices.append({'title':c.id,'pos':point(mount)+Vector2(c.facing)*cell_size*.3})
+ for device in devices:icons.append(Rect2(device.pos-Vector2(17,14),Vector2(34,28)))
+ var reserved=[Rect2(size.x-120,6,114,82),Rect2(0,size.y-30,size.x,30)]
+ for device in devices:
+  var extent=Vector2(label_font.get_string_size(device.title,HORIZONTAL_ALIGNMENT_LEFT,-1,14).x+18,21)
+  var options=[]
+  for distance in range(0,8):
+   for direction in [Vector2.RIGHT,Vector2.LEFT,Vector2.UP,Vector2.DOWN]:
+    var offset=(extent.x*.5+cell_size*.5+10 if direction.x!=0 else extent.y*.5+cell_size*.5+8)+distance*cell_size*.5
+    options.append(Rect2(device.pos+direction*offset-extent*.5,extent))
+  # Free wall/background rectangles only; no label may cover a playable cell.
+  var picked=Rect2()
+  for box in options:
+   if not Rect2(5,4,size.x-10,size.y-37).encloses(box):continue
+   if floor_rects.any(func(r):return r.intersects(box)):continue
+   if icons.any(func(r):return r.intersects(box)):continue
+   if reserved.any(func(r):return r.intersects(box.grow(3))):continue
+   picked=box;break
+  if not picked.has_area():
+   for y in range(6,int(size.y-50),24):
+    for x in range(6,int(size.x-extent.x-6),16):
+     var box=Rect2(Vector2(x,y),extent)
+     if floor_rects.any(func(r):return r.intersects(box)) or icons.any(func(r):return r.intersects(box)) or reserved.any(func(r):return r.intersects(box.grow(3))):continue
+     if not picked.has_area() or box.get_center().distance_to(device.pos)<picked.get_center().distance_to(device.pos):picked=box
+  if picked.has_area():badge_rects[device.title]=picked;reserved.append(picked)
+
+func _device_badge(anchor:Vector2,title:String,accent:Color)->void:
+ if not badge_rects.has(title):return
+ var box:Rect2=badge_rects[title];var at=box.position
+ var end=Vector2(clampf(anchor.x,box.position.x,box.end.x),clampf(anchor.y,box.position.y,box.end.y))
+ var start=anchor.move_toward(end,minf(14,anchor.distance_to(end)))
+ draw_line(start,end,Color(accent,.45),1,true)
  draw_style_box(badge_style,box)
- draw_line(at+Vector2(5,20),at+Vector2(width-5,20),Color(accent,.75),1,true)
+ draw_line(at+Vector2(5,20),at+Vector2(box.size.x-5,20),Color(accent,.75),1,true)
  draw_string(label_font,at+Vector2(9,15),title,HORIZONTAL_ALIGNMENT_LEFT,-1,14,Color('f0f6fa'))
+
+func _draw_button(o:Dictionary,p:Vector2)->void:
+ var door={}
+ for candidate in state.objects:
+  if candidate.id==o.door:door=candidate;break
+ var active=door.get('open',false)
+ var radius=clampf(cell_size*.30,6,12)
+ var face=p+Vector2(0,1 if active else -2)
+ draw_circle(p+Vector2(0,3),radius+3,Color('223746'))
+ draw_circle(p,radius+2,Color('80969b'))
+ draw_circle(face,radius,Color('65cbb2') if active else Color('efb857'))
+ draw_arc(face,radius-2,PI,TAU,16,Color('fff2c7',.65),1.5,true)
+ # A downward press arrow distinguishes an action button from a floor plate.
+ draw_line(face-Vector2(0,4),face+Vector2(0,3),Color('263945'),1.5,true)
+ draw_polyline(PackedVector2Array([face+Vector2(-3,0),face+Vector2(0,3),face+Vector2(3,0)]),Color('263945'),1.5,true)
+ if active and door.get('until',0)>state.tick:
+  var left=clampf(float(door.until-state.tick)/maxf(1,door.get('duration',1)),0,1)
+  draw_arc(p,radius+4,-PI/2,-PI/2+TAU*left,32,Color('78e0c5'),2,true)
+
+func _draw_plate(o:Dictionary,p:Vector2)->void:
+ var pressed=sim.active_ids.any(func(id):return state.robots[id].pos==o.pos)
+ var rect=Rect2(p-tile*.41,tile*.82)
+ draw_rect(rect,Color('536a79'))
+ draw_rect(rect.grow(-2),Color('9ad7c9') if pressed else Color('b7c3cb'))
+ draw_rect(rect.grow(-3),Color('458976') if pressed else Color('657d92'),false,1)
+ # Two boot marks: standing on this surface is the trigger, no interaction needed.
+ for dx in [-1,1]:
+  var foot=p+Vector2(dx*cell_size*.13,0)
+  draw_line(foot+Vector2(0,-cell_size*.15),foot+Vector2(0,cell_size*.06),Color('376757') if pressed else Color('496074'),maxf(2,cell_size*.12),true)
+  draw_line(foot+Vector2(0,cell_size*.13),foot+Vector2(0,cell_size*.19),Color('376757') if pressed else Color('496074'),maxf(2,cell_size*.12),true)
+ for corner in [Vector2(-1,-1),Vector2(1,-1),Vector2(-1,1),Vector2(1,1)]:
+  draw_circle(p+corner*cell_size*.31,1.3,Color('d3fff0') if pressed else Color('7f92a0'))
 
 func _draw_camera(c:Dictionary)->void:
  var mount=c.pos
@@ -216,7 +289,7 @@ func _draw_camera(c:Dictionary)->void:
  draw_line(Vector2(11,-7),Vector2(20,-5),Color('f1f5ef'),3,true)
  draw_circle(Vector2(5,-3),1.4,indicator)
  draw_set_transform(Vector2.ZERO)
- _device_badge(p+Vector2(0,-24),c.id,indicator)
+ _device_badge(p,c.id,indicator)
 
 func _draw_guard(g: Dictionary) -> void:
  var p = visual_guard

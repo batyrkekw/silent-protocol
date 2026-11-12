@@ -21,6 +21,23 @@ func test():
   var s=Sim.new();s.set_level(0 if id<6 else id-5,id if id<6 else 0);s.record=false;s.reset(s.solution());s.start()
   while s.outcome=='running' and s.tick<12000:s.step()
   # Read the established baselines for existing missions from the checked-in report.
+  var view=Board.new();view.sim=s;view.state=s.view()
+  for dimensions in [Vector2(700,320),Vector2(860,500),Vector2(1100,700)]:
+   view.size=dimensions;view.cell_size=minf((dimensions.x-40)/s.width,(dimensions.y-60)/s.height);view.tile=Vector2.ONE*view.cell_size;view.origin=(dimensions-Vector2(0,26)-Vector2(s.width,s.height)*view.tile)/2
+   view._layout_badges()
+   var labels=s.objects.filter(func(o):return o.type=='terminal').size()+s.cameras.size()
+   check(view.badge_rects.size()==labels,'All device labels have free space '+str(id))
+   for box in view.badge_rects.values():
+    for y in s.height:
+     for x in s.width:
+      if not s.walls.has(Vector2i(x,y)):check(not box.intersects(Rect2(view.origin+Vector2(x,y)*view.tile,view.tile)),'Label overlaps floor')
+  view.museum.prepare(view)
+  var fixtures=view.museum.lights.filter(func(l):return l.sconce)
+  check(fixtures.size()<=6,'Sparse lighting')
+  var positions=fixtures.map(func(l):return l.pos);view.museum.cache_key='';view.museum.prepare(view)
+  check(view.museum.lights.filter(func(l):return l.sconce).map(func(l):return l.pos)==positions,'Lighting positions are stable')
+  if id==8:print('FINAL LEVEL LIGHTS: ',fixtures.size())
+  view.free()
   var old=JSON.parse_string(FileAccess.get_file_as_string('res://design/verification.json'))
   var expected=int(old.reference[id].tick) if id<8 else 4179
   check(s.outcome=='won' and s.tick==expected,'Unchanged reference timing '+str(id+1));print('MAP ',id+1,' ',s.outcome,' tick=',s.tick)

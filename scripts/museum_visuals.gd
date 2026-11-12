@@ -17,12 +17,29 @@ func prepare(b):
  var key=str(b.sim.level)+':'+str(b.sim.stage)+':'+str(b.sim.width)
  if key==cache_key:return
  cache_key=key;lights.clear()
- # Fixed wall sconces and terminal light. Exhibits have no dedicated glow.
+ # Sparse, deterministic, irregular placement; never consumes simulation randomness.
+ var candidates=[];var floor_count=0
  for y in b.sim.height:
   for x in b.sim.width:
    var p=Vector2i(x,y)
-   if floor_cell(b,p) and b.sim.walls.has(p+Vector2i.UP) and x%4==2:
-    add_light(b,p,2.8,Color('fff0ca',.78),true)
+   if not floor_cell(b,p):continue
+   floor_count+=1
+   if b.sim.walls.has(p+Vector2i.UP):candidates.append(p)
+ var chosen=[]
+ var count=clampi(ceili(floor_count/32.0),1,6)
+ while chosen.size()<count and not candidates.is_empty():
+  var best=0;var best_score=-1.0
+  for i in candidates.size():
+   var cell:Vector2i=candidates[i]
+   var jitter=posmod(cell.x*73856093 ^ cell.y*19349663 ^ (b.sim.level+1)*83492791,997)/997.0
+   var spacing=100.0 if chosen.is_empty() else 1000.0
+   for other in chosen:spacing=minf(spacing,Vector2(cell-other).length())
+   var score=spacing+jitter*2.5
+   if score>best_score:best=i;best_score=score
+  var selected=candidates.pop_at(best)
+  chosen.append(selected)
+  add_light(b,selected,2.8,Color('fff0ca',.78),true)
+  candidates=candidates.filter(func(cell):return Vector2(cell-selected).length()>=4.5)
  for o in b.state.objects:
   if o.type=='terminal':add_light(b,o.pos,1.5,Color('80d8e4',.32),false)
 func add_light(b,p:Vector2i,radius:float,color:Color,sconce:bool):
@@ -91,7 +108,11 @@ func links(b,t:Dictionary)->Array:
   if d.get('authorization_terminal','')==t.id:result.append({'kind':'door','id':d.id,'cells':[d.pos],'ticks':d.get('authorization_ticks',0)})
  return result
 func connections(b):
- if b.state.get('outcome','')!='planning' or not b.state.objects.any(func(o):return o.type=='terminal'):return
+ if b.state.get('outcome','')!='planning':return
+ for control in b.state.objects:
+  if control.type in ['button','plate'] and control.pos in [b.hover,b.preview_cell]:
+   control_connection(b,control);return
+ if not b.state.objects.any(func(o):return o.type=='terminal'):return
  var terminal=focused_terminal(b)
  var footer=Rect2(8,b.size.y-29,b.size.x-16,24)
  b.draw_rect(footer,Color('101d2c',.97))
@@ -123,3 +144,20 @@ func connections(b):
   labels.append(Loc.text(title)+' '+Loc.text(name)+(' %.0f '%(link.ticks/20.0)+Loc.text('с') if link.kind=='door' else ''))
  b.draw_arc(b.point(terminal.pos),b.cell_size*.6,0,TAU,32,accent,2,true)
  b._text(footer.position+Vector2(8,17),terminal.id+' → '+', '.join(labels)+'  ·  '+Loc.text('окно')+' %.1f '%(terminal.window/20.0)+Loc.text('с'),accent,14)
+
+func control_connection(b,control:Dictionary):
+ var target={}
+ for o in b.state.objects:
+  if o.id==control.door:target=o;break
+ if target.is_empty():return
+ var accent=Color('efbc63') if control.type=='button' else Color('85d7c1')
+ var a=b.point(control.pos);var z=b.point(target.pos);var bend=Vector2(z.x,a.y)
+ for cell in [control.pos,target.pos]:b.draw_rect(Rect2(b.point(cell)-b.tile*.46,b.tile*.92),accent,false,2)
+ b.draw_dashed_line(a,bend,Color(accent,.8),1.5,5)
+ b.draw_dashed_line(bend,z,Color(accent,.8),1.5,5)
+ var footer=Rect2(8,b.size.y-29,b.size.x-16,24)
+ b.draw_rect(footer,Color('101d2c',.97))
+ var text=Loc.text('Кнопка: команда «Взаимодействовать»') if control.type=='button' else Loc.text('Плита: стойте на ней — дверь открыта')
+ text+=' → '+target.id
+ if control.type=='button' and target.has('duration'):text+=' · %.1f '%(target.duration/20.0)+Loc.text('с')
+ b._text(footer.position+Vector2(8,17),text,accent,14)
