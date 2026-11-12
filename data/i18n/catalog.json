@@ -2194,5 +2194,25 @@
   "РОБОТЫ НЕ БЛОКИРУЮТ ДРУГ ДРУГА\nШаг: 10 тиков/клетку; с предметом: 20. Поворот: 5 тиков. Взаимодействие с витриной: 40.\nЧтобы доставить предмет, выполните взаимодействие в зоне E/X.\n\nКООПЕРАЦИЯ\nПлита держит дверь, пока занята. Кнопка тяжёлой двери действует 5–6 с (зависит от уровня).\nРобот в проёме задерживает закрытие тяжёлой двери на уровнях 1–3.\nФинал: дверь галереи закрывается строго по таймеру, даже в занятом проёме.\nПервое нажатие — в первые 60 тиков после взлома T_S; повторное — до закрытия.\nТерминал отключает свою защиту временно, затем перезаряжается.\nАктивное окно повторным взломом не продлевается.\n\nОХРАНА\nКонус 90°, длина 3–5 клеток.\nОбнаружение: 12 тиков видимости; вне обзора шкала убывает на 2 за тик.\nШум бросается в видимую клетку до 5 клеток. Радиус слуха 8.\nДлительность осмотра зависит от уровня. Перезарядка шума: 200 тиков.\n\nПРОГРАММЫ\nСигналы доставляются на следующем тике. Состояние устройств проверяйте\nусловиями напрямую. «Лазер безопасен» проверяет остаток окна\nна заданное время: при пересечении клетки учитывайте вход И выход.\n«Выбрать экспонат» резервирует ближайший свободный предмет.\n\nТУТОРИАЛ\nШесть отдельных комнат. Все инструменты доступны внизу; каждый этап учит новому приёму.\n«Показать решение» запускает эталон. После победы нажмите «Следующий этап» в хронике или под картой.\nНочная смена: три сценария. Нулевая минута: четыре сценария после победы.": {
     "en": "ROBOTS DO NOT BLOCK EACH OTHER\nStep: 10 ticks/cell; carrying: 20. Turn: 5 ticks. Open a display case: 40.\nTo deliver an item, interact in exit zone E/X.\n\nCOOPERATION\nA plate holds its door open while occupied. Heavy-door buttons last 5–6 s, depending on the level.\nOn levels 1–3, a robot in a doorway prevents a heavy door from closing.\nFinale: the gallery door closes on its timer, even with a robot in the doorway.\nFirst press: within 60 ticks of hacking T_S. Press again before the door closes.\nTerminals disable security temporarily, then cool down.\nHacking again does not extend an active window.\n\nGUARDS\n90° cone, 3–5 cells long.\nDetection: 12 visible ticks; outside sight the meter drops by 2 per tick.\nThrow noise to a visible cell within 5 cells. Hearing radius: 8 cells.\nInspection duration depends on the level. Noise cooldown: 200 ticks.\n\nPROGRAMS\nSignals arrive on the next tick. Check device states directly with conditions.\n“Laser is safe” checks the remaining window for the requested duration.\nWhen crossing a cell, include BOTH entering and leaving it.\n“Select artifact” reserves the nearest available item.\n\nTUTORIAL\nSix separate rooms. All tools are available below; each stage teaches a new technique.\n“Show solution” runs a reference program. Select a stage at the top.\nAfter winning, click Next stage in the chronicle.\nNight Shift: three scenarios. Zero Minute: four scenarios after victory.",
     "kk": "РОБОТТАР БІР-БІРІНЕ КЕДЕРГІ ЖАСАМАЙДЫ\nҚадам: 10 такт/торкөз; затпен: 20. Бұрылу: 5 такт. Витринаны ашу: 40.\nЗатты жеткізу үшін E/X шығу аймағында әрекеттесіңіз.\n\nБІРЛЕСКЕН ЖҰМЫС\nПлита босамайынша есік ашық. Ауыр есік түймесі деңгейге қарай 5–6 с жұмыс істейді.\n1–3-деңгейде өткелде тұрған робот ауыр есіктің жабылуын тоқтатады.\nФиналда галерея есігі өткелде робот болса да таймер бойынша жабылады.\nАлғашқы басу: T_S бұзылғаннан кейінгі 60 такт ішінде. Есік жабылмай тұрып қайта басыңыз.\nТерминал қорғанысты уақытша өшіреді, кейін қалпына келеді.\nҚайта бұзу белсенді терезені ұзартпайды.\n\nКҮЗЕТ\n90° көру аймағы, ұзындығы 3–5 ұяшық.\nБайқау: көрінетін 12 такт; көрінбей тұрғанда көрсеткіш әр тактіде 2-ге азаяды.\nШу көрінетін торкөзге 5 торкөзге дейін лақтырылады. Есту радиусы 8.\nТексеру уақыты деңгейге байланысты. Шудың қалпына келуі: 200 такт.\n\nБАҒДАРЛАМАЛАР\nСигнал келесі тактіде жеткізіледі. Құрылғы күйін шарттармен тексеріңіз.\n«Лазер қауіпсіз» берілген уақытқа терезе қалдығын тексереді.\nТоркөзден өткенде кіру МЕН шығу уақытын есептеңіз.\n«Экспонатты таңдау» ең жақын бос затты бекітеді.\n\nҮЙРЕНУ\nАлты жеке бөлме. Барлық құралдар төменде; әр кезең жаңа тәсілді үйретеді.\n«Шешімді көрсету» үлгіні іске қосады. Кезеңді жоғарыдан таңдаңыз.\nЖеңістен кейін хроникадағы «Келесі кезең» батырмасын басыңыз.\nТүнгі ауысым: үш сценарий. Нөлдік минут: жеңістен кейін төрт сценарий."
+  },
+  "Наведите на терминал — покажем его устройства": {
+    "en": "Hover a terminal to trace its devices",
+    "kk": "Құрылғыларын көру үшін терминалға меңзерді апарыңыз"
+  },
+  "Лазеры": {
+    "en": "Lasers",
+    "kk": "Лазерлер"
+  },
+  "Допуск": {
+    "en": "Access",
+    "kk": "Рұқсат"
+  },
+  "галерея": {
+    "en": "gallery",
+    "kk": "галерея"
+  },
+  "хранилище": {
+    "en": "vault",
+    "kk": "қойма"
   }
 }

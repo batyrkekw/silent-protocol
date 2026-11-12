@@ -22,3 +22,5 @@ fi
 "$GAME_GODOT" --headless --path "$PROJECT_DIR" --script res://tests/audit_zero_crossing.gd
 "$GAME_GODOT" --headless --path "$PROJECT_DIR" --script res://tests/test_zero_minute.gd
 "$GAME_GODOT" --headless --path "$PROJECT_DIR" --script res://tests/test_zero_ui.gd
+
+"$GAME_GODOT" --headless --path "$PROJECT_DIR" --script res://tests/test_museum.gd

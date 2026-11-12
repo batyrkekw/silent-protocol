@@ -1406,6 +1406,9 @@ func _unhandled_key_input(event: InputEvent) -> void:
 		if tutorial: tutorial.hide()
 
 func _command_target(command: Dictionary) -> Vector2i:
+	if command.type == "interact" or command.has("device"):
+		var obj=sim.object(command.get("object",command.get("device","")))
+		if not obj.is_empty():return obj.pos
 	if command.type == "move":
 		return Sim.to_cell(command.target)
 	return {"hack": sim.terminal, "hack_lasers": sim.laser_terminal, "take": sim.artifact}.get(command.type, Vector2i(-1, -1))

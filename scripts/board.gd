@@ -4,6 +4,7 @@ signal robot_clicked(id:int)
 const Sim=preload('res://scripts/simulation_v5.gd')
 const Presentation=preload('res://scripts/presentation.gd')
 const Art=preload('res://scripts/robot_art.gd')
+var museum=preload('res://scripts/museum_visuals.gd').new()
 var sim:ProtocolSimulation
 var state:Dictionary={}
 var selected=0
@@ -25,7 +26,9 @@ var tile=Vector2.ONE
 var font:Font=preload('res://assets/fonts/jetbrains-mono.ttf')
 var clock=0.0
 var drawing_item=0
-func _ready():clip_contents=true
+func _ready():
+ clip_contents=true
+ mouse_exited.connect(func():hover=Vector2i(-1,-1);tooltip_text="")
 func _process(delta:float):
  if running_animation or (sim and sim.outcome=='planning'):clock+=delta
  if not state.is_empty():actors=Presentation.layout(state.robots,tile,frame_alpha)
@@ -52,18 +55,13 @@ func _gui_input(event:InputEvent):
   if sim.walkable(cell):cell_clicked.emit(cell)
 func _draw():
  if not sim or state.is_empty():return
- cell_size=minf((size.x-40)/sim.width,(size.y-40)/sim.height)
- tile=Vector2.ONE*cell_size;origin=(size-Vector2(sim.width,sim.height)*tile)/2
- draw_rect(Rect2(Vector2.ZERO,size),Color('b5c2cc'))
+ cell_size=minf((size.x-40)/sim.width,(size.y-60)/sim.height)
+ tile=Vector2.ONE*cell_size;origin=(size-Vector2(0,26)-Vector2(sim.width,sim.height)*tile)/2
+ museum.architecture(self)
  for y in sim.height:
   for x in sim.width:
    var cell=Vector2i(x,y);var rect=Rect2(origin+Vector2(cell)*tile,tile)
-   if sim.walls.has(cell):
-    draw_rect(rect,Color('ccd6db'))
-    if sim.walkable(cell+Vector2i.DOWN):draw_rect(Rect2(rect.position+Vector2(0,tile.y-4),Vector2(tile.x,7)),Color('9caeb8'))
-    if sim.walkable(cell+Vector2i.UP):draw_line(rect.position,rect.position+Vector2(tile.x,0),Color.WHITE,2)
-   else:
-    draw_rect(rect,Color('f1f3f0') if (x+y)%4 else Color('e9eeee'))
+   if not sim.walls.has(cell):
     if sim.data.grid[y][x]=='W':
      draw_rect(rect.grow(-2),Color('c2dbe2'))
      draw_line(rect.position+Vector2(3,3),rect.end-Vector2(3,3),Color('81a9b9'),2,true)
@@ -99,25 +97,32 @@ func _draw():
     draw_rect(Rect2(p-tile*.30,tile*.60),Color('8ba6b9'),false,1)
     _text(p+Vector2(-5,5),'◇',Color('59778b'),14)
    'terminal':
+    draw_rect(Rect2(p-Vector2(13,7),Vector2(27,22)),Color('12263a',.22))
     draw_rect(Rect2(p-Vector2(12,10),Vector2(24,20)),Color('263c52'))
+    draw_rect(Rect2(p-Vector2(12,10),Vector2(24,20)),Color('8ea4af'),false,1)
     var color=Color('66d4ba') if state.tick>=o.ready else Color('bd9c67')
     draw_rect(Rect2(p-Vector2(8,7),Vector2(16,11)),color)
-    _text(p+Vector2(-8,-15),'T'+o.id[-1],Color('49667a'),12)
+    _text(p+Vector2(-8,-15),o.id if o.id.begins_with('T_') else 'T'+o.id[-1],Color('b6cbd3') if sim.walls.has(o.pos+Vector2i.UP) else Color('49667a'),12)
    'item':
-    draw_rect(Rect2(p-Vector2(16,13),Vector2(32,28)),Color('263c52'))
-    draw_rect(Rect2(p-Vector2(17,14),Vector2(34,30)),Color('aabfc8'),false,2)
+    var base=Rect2(p-tile*.42,tile*.84)
+    draw_rect(Rect2(base.position+Vector2(2,5),base.size),Color('132e40',.22))
+    draw_rect(base,Color('eff0e5'))
+    draw_rect(base.grow(-2),Color('bfa574'),false,1)
+    draw_rect(base.grow(-4),Color('233e50'))
+    draw_line(base.position+Vector2(3,3),base.position+Vector2(base.size.x-3,3),Color('fff4d1'),2,true)
     if not o.delivered and o.carrier<0:
      drawing_item={'E1':1,'E2':2,'A':0}.get(o.id,0) if sim.level==3 else (int(o.id[-1])-1 if sim.level>=2 else (1 if sim.level==1 else 0))
-     _gem(p+Vector2(0,sin(clock*2)*1.3),1)
+     _gem(p+Vector2(0,sin(clock*2)*1.3),minf(1,cell_size/32))
  for l in state.lasers:
   var active=sim.laser_active(l,state.tick,state.objects)
   for cell in l.cells:
    var p=point(cell);var color=Color('ef4b7b') if active else Color('62a99e')
    var a=p-Vector2(tile.x*.45,0);var b=p+Vector2(tile.x*.45,0)
    if active:
-    draw_line(a,b,Color(color,.15),8,true);draw_line(a,b,color,2,true)
+    draw_line(a,b,Color(color,.08),12,true);draw_line(a,b,Color(color,.18),6,true);draw_line(a,b,color,2,true);draw_line(a,b,Color('ffe5ee',.8),.7,true)
    else:draw_dashed_line(a,b,Color(color,.6),1,4)
    draw_rect(Rect2(a-Vector2(2,5),Vector2(4,10)),Color('2e435b'));draw_rect(Rect2(b-Vector2(2,5),Vector2(4,10)),Color('2e435b'))
+ museum.connections(self)
  for c in state.cameras:
   var mount=c.pos
   if not sim.walls.has(mount):
@@ -127,7 +132,7 @@ func _draw():
   draw_rect(Rect2(-4,-10,8,10),Color('526b80'));draw_rect(Rect2(-11,-2,22,10),Color('273c51'))
   draw_circle(Vector2(0,9),4,Color('eab075') if sim.camera_on(c,state.tick,state.objects) else Color('70b5aa'))
   draw_set_transform(Vector2.ZERO)
-  _text(p+Vector2(-7,-12),'C'+c.id[-1],Color('49667a'),12)
+  _text(p+Vector2(-7,-12),'C'+c.id[-1],Color('b6cbd3'),12)
  for g in state.guards:
   if g.get('mode','')=='post':
    var post=point(g.route[0]);draw_rect(Rect2(post-tile*.36,tile*.72),Color('b9747e'),false,2)
