@@ -17,6 +17,10 @@ const SAVE_PATH = "user://silent_protocol_plan.json"
 const TYPES = ["forward","backward","left","right","interact","noise","wait","send","wait_signal","timer","condition","repeat","if","while","select"]
 const TYPE_LABELS = ["↑ Шаг вперёд","↓ Шаг назад","Налево · 90°","Направо · 90°","Взаимодействовать","Бросить шум","Ждать время","Сигнал да / нет","Ждать сигнал","Таймер","Ждать условие","Повторить N раз","Если / иначе","Повторять пока","Выбрать экспонат"]
 const CONDITION_LABELS = ["Камера выключена","Лазер безопасен","Терминал готов","Дверь открыта","Охранник отвлечён","Охранник идёт на запад","Есть свободные предметы","Не всё доставлено","Сигнал включён","Сигнал выключен","Таймер истёк","Впереди свободно","Несу предмет","Окно камеры достаточно","Охранник в нише","Сигнал или всё доставлено","Всё доставлено","Рядом выбранный экспонат","На метке","Охранник осматривает шум","Охранник на посту","Шум готов","Плита занята","Охранник патрулирует","Охранник на паузе","Охранник возвращается","Охранник осматривает нишу","Охранник идёт на шум","Охранник смотрит на восток","Камера активна","Лазер включён","Охранник смотрит вдоль коридора"]
+var credits_dialog: AcceptDialog
+var exit_dialog: ConfirmationDialog
+var credits_button: Button
+var exit_button: Button
 var stage_picker: OptionButton
 var next_stage_button: Button
 var chronicle_next_button: Button
@@ -342,6 +346,10 @@ func _build_ui() -> void:
 	languages.select(maxi(0,["ru","kk","en"].find(TranslationServer.get_locale().substr(0,2))))
 	languages.item_selected.connect(func(index): preload("res://scripts/localization.gd").set_language(["ru", "kk", "en"][index]))
 	header.add_child(languages)
+	credits_button = _button("Авторы", func(): credits_dialog.popup_centered(Vector2i(760, 520)), 70)
+	header.add_child(credits_button)
+	exit_button = _button("Выход", func(): exit_dialog.popup_centered(Vector2i(610, 180)), 65)
+	header.add_child(exit_button)
 	var tool_panel = _panel()
 	tool_panel.add_theme_stylebox_override("panel",_style(Color("0b1827"),Color("37626f"),3))
 	root.add_child(tool_panel)
@@ -758,7 +766,22 @@ func _build_ui() -> void:
 	help_dialog.add_child(help_text)
 	add_child(help_dialog)
 	_enlarge_dialog_text(chronicle)
-	for dialog in [composer, help_dialog]:
+	credits_dialog = AcceptDialog.new()
+	credits_dialog.title = "Авторы и компоненты"
+	credits_dialog.ok_button_text = "Закрыть"
+	var credits_text = RichTextLabel.new()
+	credits_text.custom_minimum_size = Vector2(700, 430)
+	credits_text.text = "Тихий протокол · Команда САНА\nGambit Hackathon 2026 · AUTOMATE IT!\n\nГрафика и звук созданы программно для проекта.\nРазработка с помощью OpenAI Codex: код, графика, звук и тесты.\nКоманда отвечает за результат и объяснение реализации.\n\nGodot Engine 4.5.1 — Juan Linietsky, Ariel Manzur & contributors · MIT\nJetBrains Mono — JetBrains & contributors · SIL OFL 1.1\n\nПолные лицензии доступны в разделе «Правила».\nПроисхождение остальных компонентов: third_party.md.\n\nПо ТЗ права на сданное решение принадлежат HackHub.\nУчастники сохраняют авторство; сторонние компоненты — свои лицензии."
+	credits_dialog.add_child(credits_text)
+	add_child(credits_dialog)
+	exit_dialog = ConfirmationDialog.new()
+	exit_dialog.title = "Выход из игры"
+	exit_dialog.dialog_text = "Выйти из игры? Несохранённые изменения программы будут потеряны."
+	exit_dialog.ok_button_text = "Выйти"
+	exit_dialog.cancel_button_text = "Остаться"
+	exit_dialog.confirmed.connect(func(): get_tree().quit())
+	add_child(exit_dialog)
+	for dialog in [composer, help_dialog, credits_dialog, exit_dialog]:
 		_style_dialog(dialog)
 
 func _process(delta: float) -> void:
@@ -821,7 +844,7 @@ func _update_parameters() -> void:
 	target_label.hide();quick_targets.hide();signal_presets.visible=signal_name.visible
 	add_button.disabled=sim.outcome!="planning"
 	add_button.text="Сохранить блок" if editing_index>=0 else "+ Добавить блок"
-	action_description.text={"forward":"Одна клетка по стрелке робота. 0,5 с без добычи, 1 с с добычей. Стены сами не обходит.","backward":"Одна клетка назад без разворота. 0,5 с без добычи, 1 с с добычей.","left":"Повернуться на 90° против часовой стрелки. Занимает 0,25 с.","right":"Повернуться на 90° по часовой стрелке. Занимает 0,25 с.","interact":"У кнопки — открыть дверь; у терминала — взломать; рядом с витриной — взять; на выходе — положить.","noise":"Бросок в видимую клетку до 5 клеток. Слух охранника 8 клеток, осмотр 6 с, перезарядка 10 с.","select":"Закрепить ближайший свободный экспонат. Приближайтесь шагами и проверяйте «Рядом выбранный экспонат».","wait":"Ожидание заданного времени.","send":"Общий переключатель; доставка на следующем тике.","wait_signal":"Ожидать заданное состояние переключателя.","timer":"Личный таймер работает параллельно программе.","condition":"Ожидать состояние мира. Для окна задайте время, нужное на пересечение.","repeat":"Выполнить вложенные блоки N раз.","if":"Выбрать одну из двух веток по состоянию мира.","while":"Проверять условие перед каждым повторением."}[kind]
+	action_description.text={"forward":"Одна клетка по стрелке робота. 0,5 с без добычи, 1 с с добычей. Стены сами не обходит.","backward":"Одна клетка назад без разворота. 0,5 с без добычи, 1 с с добычей.","left":"Повернуться на 90° против часовой стрелки. Занимает 0,25 с.","right":"Повернуться на 90° по часовой стрелке. Занимает 0,25 с.","interact":"У кнопки — открыть дверь; у терминала — взломать; рядом с витриной — взять; на выходе — положить.","noise":"Бросок в видимую клетку до 5 клеток. Слух охранника 8 клеток. Осмотр зависит от уровня: 6, 13 или 11 с. Перезарядка 10 с.","select":"Закрепить ближайший свободный экспонат. Приближайтесь шагами и проверяйте «Рядом выбранный экспонат».","wait":"Ожидание заданного времени.","send":"Общий переключатель; доставка на следующем тике.","wait_signal":"Ожидать заданное состояние переключателя.","timer":"Личный таймер работает параллельно программе.","condition":"Ожидать состояние мира. Для окна задайте время, нужное на пересечение.","repeat":"Выполнить вложенные блоки N раз.","if":"Выбрать одну из двух веток по состоянию мира.","while":"Проверять условие перед каждым повторением."}[kind]
 	var unlocked = block_editor.unlocked()
 	for i in action_buttons.size():
 		action_buttons[i].visible = TYPES[i] in unlocked

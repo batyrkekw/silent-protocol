@@ -2230,5 +2230,73 @@
   "Плита: стойте на ней — дверь открыта": {
     "en": "Plate: stand on it to keep the door open",
     "kk": "Тақта: үстінде тұрсаңыз, есік ашық"
+  },
+  "Авторы": {
+    "en": "Credits",
+    "kk": "Авторлар"
+  },
+  "Выход": {
+    "en": "Exit",
+    "kk": "Шығу"
+  },
+  "Авторы и компоненты": {
+    "en": "Credits and components",
+    "kk": "Авторлар мен компоненттер"
+  },
+  "Закрыть": {
+    "en": "Close",
+    "kk": "Жабу"
+  },
+  "Выход из игры": {
+    "en": "Exit game",
+    "kk": "Ойыннан шығу"
+  },
+  "Выйти": {
+    "en": "Exit",
+    "kk": "Шығу"
+  },
+  "Остаться": {
+    "en": "Stay",
+    "kk": "Қалу"
+  },
+  "Выйти из игры? Несохранённые изменения программы будут потеряны.": {
+    "en": "Exit the game? Unsaved program changes will be lost.",
+    "kk": "Ойыннан шығасыз ба? Бағдарламадағы сақталмаған өзгерістер жоғалады."
+  },
+  "Тихий протокол · Команда САНА": {
+    "en": "Silent Protocol · Team SANA",
+    "kk": "Тыныш хаттама · САНА командасы"
+  },
+  "Графика и звук созданы программно для проекта.": {
+    "en": "Graphics and audio were generated programmatically for this project.",
+    "kk": "Графика мен дыбыс осы жоба үшін бағдарламалық түрде жасалды."
+  },
+  "Разработка с помощью OpenAI Codex: код, графика, звук и тесты.": {
+    "en": "Developed with OpenAI Codex: code, graphics, audio and tests.",
+    "kk": "OpenAI Codex көмегімен әзірленді: код, графика, дыбыс және тесттер."
+  },
+  "Команда отвечает за результат и объяснение реализации.": {
+    "en": "The team is responsible for the result and explaining the implementation.",
+    "kk": "Нәтиже мен іске асыруды түсіндіруге команда жауапты."
+  },
+  "Полные лицензии доступны в разделе «Правила».": {
+    "en": "Full licenses are available under Rules.",
+    "kk": "Толық лицензиялар «Ережелер» бөлімінде қолжетімді."
+  },
+  "Происхождение остальных компонентов: third_party.md.": {
+    "en": "Other component provenance: third_party.md.",
+    "kk": "Қалған компоненттердің шығу тегі: third_party.md."
+  },
+  "По ТЗ права на сданное решение принадлежат HackHub.": {
+    "en": "Under the brief, rights to the submitted solution belong to HackHub.",
+    "kk": "Техникалық тапсырма бойынша тапсырылған шешімнің құқықтары HackHub-қа тиесілі."
+  },
+  "Участники сохраняют авторство; сторонние компоненты — свои лицензии.": {
+    "en": "Participants retain authorship; third-party components retain their own licenses.",
+    "kk": "Қатысушылардың авторлығы сақталады; сыртқы компоненттер өз лицензияларымен қолданылады."
+  },
+  "Бросок в видимую клетку до 5 клеток. Слух охранника 8 клеток. Осмотр зависит от уровня: 6, 13 или 11 с. Перезарядка 10 с.": {
+    "en": "Throw to a visible cell up to 5 cells away. Hearing range: 8 cells. Inspection varies by level: 6, 13 or 11 s. Cooldown: 10 s.",
+    "kk": "5 торға дейінгі көрінетін торға лақтыру. Есту қашықтығы: 8 тор. Тексеру деңгейге байланысты: 6, 13 немесе 11 с. Қайта қолдану: 10 с."
   }
 }
