@@ -24,10 +24,17 @@ var cell_size=32.0
 var origin=Vector2.ZERO
 var tile=Vector2.ONE
 var font:Font=preload('res://assets/fonts/jetbrains-mono.ttf')
+var label_font:Font=preload('res://assets/fonts/jetbrains-mono-bold.ttf')
+var badge_style:StyleBoxFlat
 var clock=0.0
 var drawing_item=0
 func _ready():
  clip_contents=true
+ badge_style=StyleBoxFlat.new()
+ badge_style.bg_color=Color('101e2d')
+ badge_style.border_color=Color('577b8a')
+ badge_style.set_border_width_all(1)
+ badge_style.set_corner_radius_all(4)
  mouse_exited.connect(func():hover=Vector2i(-1,-1);tooltip_text="")
 func _process(delta:float):
  if running_animation or (sim and sim.outcome=='planning'):clock+=delta
@@ -102,17 +109,14 @@ func _draw():
     draw_rect(Rect2(p-Vector2(12,10),Vector2(24,20)),Color('8ea4af'),false,1)
     var color=Color('66d4ba') if state.tick>=o.ready else Color('bd9c67')
     draw_rect(Rect2(p-Vector2(8,7),Vector2(16,11)),color)
-    _text(p+Vector2(-8,-15),o.id if o.id.begins_with('T_') else 'T'+o.id[-1],Color('b6cbd3') if sim.walls.has(o.pos+Vector2i.UP) else Color('49667a'),12)
+    _device_badge(p+Vector2(0,-26),o.id if o.id.begins_with('T_') else 'T'+o.id[-1],Color('83e2da'))
    'item':
-    var base=Rect2(p-tile*.42,tile*.84)
-    draw_rect(Rect2(base.position+Vector2(2,5),base.size),Color('132e40',.22))
-    draw_rect(base,Color('eff0e5'))
-    draw_rect(base.grow(-2),Color('bfa574'),false,1)
-    draw_rect(base.grow(-4),Color('233e50'))
-    draw_line(base.position+Vector2(3,3),base.position+Vector2(base.size.x-3,3),Color('fff4d1'),2,true)
     if not o.delivered and o.carrier<0:
      drawing_item={'E1':1,'E2':2,'A':0}.get(o.id,0) if sim.level==3 else (int(o.id[-1])-1 if sim.level>=2 else (1 if sim.level==1 else 0))
-     _gem(p+Vector2(0,sin(clock*2)*1.3),minf(1,cell_size/32))
+     draw_set_transform(p+Vector2(0,7),0,Vector2(1,.3))
+     draw_circle(Vector2.ZERO,cell_size*.23,Color('243747',.16))
+     draw_set_transform(Vector2.ZERO)
+     _gem(p+Vector2(0,sin(clock*2)*1.3),minf(1,cell_size/28))
  for l in state.lasers:
   var active=sim.laser_active(l,state.tick,state.objects)
   for cell in l.cells:
@@ -123,16 +127,7 @@ func _draw():
    else:draw_dashed_line(a,b,Color(color,.6),1,4)
    draw_rect(Rect2(a-Vector2(2,5),Vector2(4,10)),Color('2e435b'));draw_rect(Rect2(b-Vector2(2,5),Vector2(4,10)),Color('2e435b'))
  museum.connections(self)
- for c in state.cameras:
-  var mount=c.pos
-  if not sim.walls.has(mount):
-   if sim.walls.has(mount-c.facing):mount-=c.facing
-  var p=point(mount)+Vector2(c.facing)*cell_size*.3
-  draw_set_transform(p,Vector2(c.facing).angle()-PI/2)
-  draw_rect(Rect2(-4,-10,8,10),Color('526b80'));draw_rect(Rect2(-11,-2,22,10),Color('273c51'))
-  draw_circle(Vector2(0,9),4,Color('eab075') if sim.camera_on(c,state.tick,state.objects) else Color('70b5aa'))
-  draw_set_transform(Vector2.ZERO)
-  _text(p+Vector2(-7,-12),'C'+c.id[-1],Color('b6cbd3'),12)
+ for c in state.cameras:_draw_camera(c)
  for g in state.guards:
   if g.get('mode','')=='post':
    var post=point(g.route[0]);draw_rect(Rect2(post-tile*.36,tile*.72),Color('b9747e'),false,2)
@@ -186,6 +181,43 @@ func _draw():
  Art.render(self,hud+Vector2(0,36),0,.65)
  var escaped=sim.active_ids.filter(func(i):return state.robots[i].pos in sim.exits()).size()
  _text(hud+Vector2(20,41),'%d/%d'%[escaped,sim.active_ids.size()],Color('e5edfa'),18)
+func _device_badge(center:Vector2,title:String,accent:Color)->void:
+ var width=label_font.get_string_size(title,HORIZONTAL_ALIGNMENT_LEFT,-1,14).x+18
+ var at=Vector2(clampf(center.x-width*.5,5,size.x-width-5),clampf(center.y-10,3,size.y-25))
+ var box=Rect2(at,Vector2(width,21))
+ draw_style_box(badge_style,box)
+ draw_line(at+Vector2(5,20),at+Vector2(width-5,20),Color(accent,.75),1,true)
+ draw_string(label_font,at+Vector2(9,15),title,HORIZONTAL_ALIGNMENT_LEFT,-1,14,Color('f0f6fa'))
+
+func _draw_camera(c:Dictionary)->void:
+ var mount=c.pos
+ if not sim.walls.has(mount) and sim.walls.has(mount-c.facing):mount-=c.facing
+ var p=point(mount)+Vector2(c.facing)*cell_size*.3
+ var active=sim.camera_on(c,state.tick,state.objects)
+ var indicator=Color('f2b85a') if active else Color('719ca8')
+ draw_set_transform(p,Vector2(c.facing).angle(),Vector2.ONE*clampf(cell_size/28,.75,1.2))
+ # Wall plate, articulated bracket, pale metal CCTV housing and hooded lens.
+ draw_rect(Rect2(-8,-8,4,16),Color('8eabb5'))
+ draw_line(Vector2(-6,-5),Vector2(-6,5),Color('d6e3e6'),1,true)
+ draw_line(Vector2(-4,1),Vector2(4,1),Color('142936'),5,true)
+ draw_line(Vector2(-4,0),Vector2(4,0),Color('9cb2bb'),2,true)
+ draw_circle(Vector2(2,0),3,Color('607e8c'))
+ var body=PackedVector2Array([Vector2(2,-7),Vector2(13,-7),Vector2(18,-4),Vector2(18,5),Vector2(12,8),Vector2(2,8)])
+ var shadow=body.duplicate()
+ for i in shadow.size():shadow[i]+=Vector2(1,3)
+ draw_colored_polygon(shadow,Color('152634',.23))
+ draw_colored_polygon(body,Color('dbe6e7'))
+ draw_line(Vector2(3,-6),Vector2(14,-6),Color('f8fbf6'),2,true)
+ draw_line(Vector2(3,7),Vector2(12,7),Color('829ca8'),2,true)
+ draw_rect(Rect2(13,-4,6,10),Color('172c3c'))
+ draw_circle(Vector2(16,1),3.3,Color('466e82'))
+ draw_circle(Vector2(16,1),2.1,Color('0c1b2b'))
+ draw_circle(Vector2(16.5,.1),.9,Color('a6deeb'))
+ draw_line(Vector2(11,-7),Vector2(20,-5),Color('f1f5ef'),3,true)
+ draw_circle(Vector2(5,-3),1.4,indicator)
+ draw_set_transform(Vector2.ZERO)
+ _device_badge(p+Vector2(0,-24),c.id,indicator)
+
 func _draw_guard(g: Dictionary) -> void:
  var p = visual_guard
  var facing = Vector2(g.facing)

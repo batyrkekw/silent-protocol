@@ -17,15 +17,14 @@ func prepare(b):
  var key=str(b.sim.level)+':'+str(b.sim.stage)+':'+str(b.sim.width)
  if key==cache_key:return
  cache_key=key;lights.clear()
- # Fixed wall sconces and exhibit spots. Light is clipped to actual floor cells.
+ # Fixed wall sconces and terminal light. Exhibits have no dedicated glow.
  for y in b.sim.height:
   for x in b.sim.width:
    var p=Vector2i(x,y)
    if floor_cell(b,p) and b.sim.walls.has(p+Vector2i.UP) and x%4==2:
     add_light(b,p,2.8,Color('fff0ca',.78),true)
  for o in b.state.objects:
-  if o.type=='item':add_light(b,o.pos,2.2,Color('ffe4a8',.85),false)
-  elif o.type=='terminal':add_light(b,o.pos,1.5,Color('80d8e4',.32),false)
+  if o.type=='terminal':add_light(b,o.pos,1.5,Color('80d8e4',.32),false)
 func add_light(b,p:Vector2i,radius:float,color:Color,sconce:bool):
  var cells=[]
  for y in range(p.y-ceili(radius),p.y+ceili(radius)+1):
