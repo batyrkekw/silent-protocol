@@ -2,7 +2,9 @@
 .godot/
 .tools/
 .DS_Store
-build/
+/build/*
+!/build/windows/
+/build/windows/*
 builds/
 __pycache__/
 *.tmp
@@ -23,3 +25,6 @@ export_credentials.cfg
 # Original pasted task messages are not project source
 /design/zero_minute/request.txt
 /design/zero_minute/request_revised.txt
+
+# Hackathon: ready-to-run build included in Code → Download ZIP
+!/build/windows/SilentProtocol.exe

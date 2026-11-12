@@ -1,6 +1,6 @@
 """Validate the standalone Windows executable, including its embedded Godot pack."""
 from pathlib import Path
-import struct, plistlib, subprocess, hashlib, json
+import struct, plistlib, subprocess, hashlib, json, shutil, zipfile
 root = Path(__file__).resolve().parents[1]
 exe = root.parent / 'SilentProtocol.exe'
 blob = exe.read_bytes()
@@ -25,4 +25,16 @@ manifest={'windows_exe_sha256':hashlib.sha256(blob).hexdigest(),
           'mac_binary_sha256':hashlib.sha256(mac_binary.read_bytes()).hexdigest(),
           'mac_pack_sha256':hashlib.sha256((app/'Contents/Resources/SilentProtocol.pck').read_bytes()).hexdigest()}
 (root/'design/release_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
-print('Validated desktop builds; ZIP packaging is disabled.')
+destination=root/'build/windows/SilentProtocol.exe'
+destination.parent.mkdir(parents=True,exist_ok=True)
+shutil.copy2(exe,destination)
+archive=root.parent/'SilentProtocol-Windows-x64.zip'
+with zipfile.ZipFile(archive,'w',zipfile.ZIP_DEFLATED,compresslevel=6) as package:
+    package.write(exe,'SilentProtocol/SilentProtocol.exe')
+    package.writestr('SilentProtocol/START_HERE.txt', 'Silent Protocol — САНА\n\nWindows 10/11 x64: полностью распакуйте архив и откройте SilentProtocol.exe.\nGodot и дополнительные программы не нужны. Игра работает без интернета.\n\nПеретаскивайте команды из нижней палитры. ▶ запускает программу; ключ возвращает к плану.\nНачните с обучения. Язык и звук — вверху.\n\nhttps://github.com/batyrkekw/silent-protocol\n')
+    package.write(root/'third_party.md','SilentProtocol/third_party.md')
+with zipfile.ZipFile(archive) as package:
+    assert package.testzip() is None
+    assert hashlib.sha256(package.read('SilentProtocol/SilentProtocol.exe')).hexdigest()==manifest['windows_exe_sha256']
+print(f'Windows build copied into repository: {destination}')
+print(f'Windows ZIP verified: {archive}')

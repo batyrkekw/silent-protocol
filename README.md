@@ -8,7 +8,7 @@
 
 *A deterministic programming heist puzzle built with Godot 4.5.1 and GDScript. Three robots, visual command blocks, signals, conditions, loops, timed security windows and replayable execution.*
 
-[Скачать Windows-версию](https://github.com/batyrkekw/silent-protocol/releases/latest) · [Проверки финала](design/zero_minute/REPORT.md)
+[**Скачать и играть — Windows ZIP**](https://github.com/batyrkekw/silent-protocol/releases/latest/download/SilentProtocol-Windows-x64.zip) · [Проверки финала](design/zero_minute/REPORT.md)
 
 
 ## Почему это автоматизация
@@ -25,7 +25,7 @@
 
 ## Начать играть
 
-1. Windows-сборка доступна в [Releases](https://github.com/batyrkekw/silent-protocol/releases/latest).
+1. Скачайте [Windows ZIP](https://github.com/batyrkekw/silent-protocol/releases/latest/download/SilentProtocol-Windows-x64.zip) и полностью распакуйте. Или нажмите **Code → Download ZIP**: после распаковки репозитория готовый EXE находится в **`build/windows/SilentProtocol.exe`**.
 2. **macOS**: откройте локальную `Silent Protocol.app` из папки GAME или соберите её из исходников командой ниже.
 3. **Windows x64**: откройте `SilentProtocol.exe`. Ресурсы встроены; Godot устанавливать не нужно.
 4. Пройдите первый учебный этап или выберите ограбление в верхнем списке.
@@ -98,7 +98,7 @@ docs/                     — описание релиза
 ./test.command
 ```
 
-Для скриптов можно указать движок через `GODOT_BIN`. Кеш Godot, сам движок, локальные настройки и готовые бинарники не хранятся в Git.
+Для скриптов можно указать движок через `GODOT_BIN`. Кеш Godot, сам движок и локальные настройки не хранятся в Git. Готовый Windows EXE включён в `build/windows/` по условиям хакатона.
 
 ## Сборка
 
@@ -108,7 +108,7 @@ docs/                     — описание релиза
 ./build_all.command
 ```
 
-Команда создаёт `.app`, Windows `.exe` со встроенным PCK в родительской папке. ZIP-архивы автоматически не создаются. macOS-упаковка использует системный `codesign`; это не кроссплатформенный установщик.
+Команда создаёт `.app`, Windows `.exe` со встроенным PCK в родительской папке. Также обновляет `build/windows/SilentProtocol.exe` для репозитория и создаёт `SilentProtocol-Windows-x64.zip` в родительской папке. macOS-упаковка использует системный `codesign`; это не кроссплатформенный установщик.
 
 Для отдельного Windows-экспорта:
 
