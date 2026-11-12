@@ -2,7 +2,7 @@
 
 ## Скачать и запустить
 
-- **macOS:** скачайте `SilentProtocol-macOS.zip`, распакуйте и откройте `Silent Protocol.app`.
+- **macOS:** готовая `.app` сохранена локально в папке GAME. Для сборки из репозитория используйте `./build_all.command` на Mac; архив macOS в релизе не размещён.
 - **Windows x64:** скачайте и запустите `SilentProtocol.exe`. Ресурсы встроены, Godot не нужен.
 - **Исходники:** файлы Source code ниже или репозиторий.
 

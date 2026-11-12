@@ -25,25 +25,4 @@ manifest={'windows_exe_sha256':hashlib.sha256(blob).hexdigest(),
           'mac_binary_sha256':hashlib.sha256(mac_binary.read_bytes()).hexdigest(),
           'mac_pack_sha256':hashlib.sha256((app/'Contents/Resources/SilentProtocol.pck').read_bytes()).hexdigest()}
 (root/'design/release_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
-# Ship both standalone applications and the editable source project.
-import zipfile
-archive = root.parent / 'SilentProtocol.zip'
-temporary = root.parent / 'SilentProtocol.zip.tmp'
-with zipfile.ZipFile(temporary, 'w', zipfile.ZIP_DEFLATED, compresslevel=6) as z:
-    z.write(exe, 'SilentProtocol.exe')
-    for path in sorted(app.rglob('*')):
-        if path.is_file() and path.name!='.DS_Store':z.write(path,Path(app.name)/path.relative_to(app))
-    for path in sorted(root.rglob('*')):
-        relative = path.relative_to(root)
-        if not path.is_file() or any(part in {'.tools', '.godot', '.git', 'build', '__pycache__'} for part in relative.parts):
-            continue
-        if path.suffix in {'.zip', '.tmp', '.log'} or path.name == '.DS_Store':
-            continue
-        z.write(path, Path('Project') / relative)
-with zipfile.ZipFile(temporary) as z:
-    assert z.testzip() is None
-    assert 'SilentProtocol.exe' in z.namelist() and 'Project/project.godot' in z.namelist()
-    assert 'Silent Protocol.app/Contents/Info.plist' in z.namelist()
-    assert (z.getinfo('Silent Protocol.app/Contents/MacOS/SilentProtocol').external_attr>>16)&0o111
-temporary.replace(archive)
-print(f'Packaged executable and source: {archive} ({archive.stat().st_size/1024/1024:.1f} MiB)')
+print('Validated desktop builds; ZIP packaging is disabled.')

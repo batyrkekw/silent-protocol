@@ -8,9 +8,8 @@
 
 *A deterministic programming heist puzzle built with Godot 4.5.1 and GDScript. Three robots, visual command blocks, signals, conditions, loops, timed security windows and replayable execution.*
 
-[Скачать игру для macOS / Windows](https://github.com/batyrkekw/silent-protocol/releases/latest) · [Промпт презентации](docs/presentation-prompt.md) · [Проверки финала](design/zero_minute/REPORT.md)
+[Скачать Windows-версию](https://github.com/batyrkekw/silent-protocol/releases/latest) · [Проверки финала](design/zero_minute/REPORT.md)
 
-![Карта музея и программа](docs/screenshots/01-museum-and-plan.png)
 
 ## Почему это автоматизация
 
@@ -26,8 +25,8 @@
 
 ## Начать играть
 
-1. Скачайте нужный файл в [Releases](https://github.com/batyrkekw/silent-protocol/releases/latest).
-2. **macOS**: распакуйте `SilentProtocol-macOS.zip` и откройте `Silent Protocol.app`.
+1. Windows-сборка доступна в [Releases](https://github.com/batyrkekw/silent-protocol/releases/latest).
+2. **macOS**: откройте локальную `Silent Protocol.app` из папки GAME или соберите её из исходников командой ниже.
 3. **Windows x64**: откройте `SilentProtocol.exe`. Ресурсы встроены; Godot устанавливать не нужно.
 4. Пройдите первый учебный этап или выберите ограбление в верхнем списке.
 5. Перетаскивайте блоки из нижней палитры. Нажмите карточку для изменения параметров.
@@ -49,7 +48,6 @@ macOS-сборка проверена запуском через LaunchServices
 
 В финале нужно доставить **слиток, золотой банан и алмаз**, а затем вывести всех троих роботов. Дверь галереи не удерживается роботом: первый допуск кнопки — 60 тиков после взлома, время открытия — 120 тиков. Для дальнего экспоната нужно повторное нажатие. Геометрические и временные ограничения требуют трёх отдельных ролей.
 
-![Исполнение ограбления](docs/screenshots/03-heist-in-progress.png)
 
 ## Редактор и разбор
 
@@ -57,9 +55,7 @@ macOS-сборка проверена запуском через LaunchServices
 
 Хроника находится в боковой панели, показывает события и позволяет перематывать запись. После победы доступны показатели результата, локальные рекорды и видимая проверка устойчивости.
 
-![Редактор условий](docs/screenshots/02-automation-editor.png)
 
-![Проверка устойчивости](docs/screenshots/04-reliability-results.png)
 
 ## Технологии и правила времени
 
@@ -79,7 +75,7 @@ scripts/robustness_runner.gd — последовательный прогон �
 data/levels/              — 9 карт: 6 учебных + 3 ограбления
 data/programs/            — условные и хрупкие эталоны
 tests/                    — проверки симуляции и интерфейса
-docs/                     — скриншоты и промпт презентации
+docs/                     — описание релиза
 ```
 
 ## Запуск исходников
@@ -106,7 +102,7 @@ docs/                     — скриншоты и промпт презент�
 ./build_all.command
 ```
 
-Команда создаёт `.app`, Windows `.exe` со встроенным PCK и общий ZIP в родительской папке. macOS-упаковка использует системный `codesign`; это не кроссплатформенный установщик.
+Команда создаёт `.app`, Windows `.exe` со встроенным PCK в родительской папке. ZIP-архивы автоматически не создаются. macOS-упаковка использует системный `codesign`; это не кроссплатформенный установщик.
 
 Для отдельного Windows-экспорта:
 

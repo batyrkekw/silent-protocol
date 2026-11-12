@@ -58,6 +58,6 @@ f'- Хранилище: T_V → плита минимум {r["TV_to_plate_min_ti
 '- `verification.json`, `crossing_search.json`, `preflight_results.json`: результаты движка.',
 '- `pair_counterexamples.json`: исторический контрпример старой двери, сохранён для регрессии.',
 '- `./test.command`: все прежние проверки + финал и его интерфейс.',
-'- `./build_all.command`: Windows, macOS, подпись macOS и общий ZIP.',
+'- `./build_all.command`: Windows, macOS, подпись macOS и проверка сборок.',
 '', 'Windows EXE содержит встроенный PCK. Его ресурсы проверяются Godot на Mac; это не заменяет нативный запуск на Windows. macOS .app запускается самостоятельно и имеет локальную ad-hoc подпись; подписки Developer ID/нотариального заверения нет.']
 (folder/'REPORT.md').write_text('\n'.join(lines)+'\n')
